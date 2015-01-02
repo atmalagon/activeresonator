@@ -1,48 +1,92 @@
+%% ****** Start of file apstemplate.tex ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4 distribution.
+%%   Version 4.1r of REVTeX, August 2010
+%%
+%%
+%%   Copyright (c) 2001, 2009, 2010 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showpacs' option to make PACS codes appear
+%  Add 'showkeys' option to make keywords appear
+%\documentclass[aps,prl,preprint,groupedaddress]{revtex4-1}
 \documentclass[aps,prl,twocolumn,groupedaddress]{revtex4-1}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-1}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-1}
 
-%\documentclass[11pt]{amsart}
-%\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
-%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev4-1}
+
 \usepackage{graphicx}
-\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{epstopdf}
-%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \begin{document}
 
-\title{Working Title: Improving Dark Matter Axion Searches with Active Resonators}
-\author{G. Rybka, A. Malagon, L. McBride, K. Patel}
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Improving Dark Matter Axion Searches with Active Resonators}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{Gray Rybka}
 \email[]{grybka@uw.edu}
 \affiliation{University of Washington}
-\date{}                                           % Activate to display a given date or no date
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
 
-%runnning list of figures we need in the paper:
-%plot of snr vs Q for signal sent in on resonance; with and without delay line
-%plot of snr vs Q for a measurement made one peak away from tallest peak
-%plot of S_11 with and without delay line
-%plot of snr vs Q for the new delay line in the transition region
-% all of the above needs to be done with the new couplings as we changed the coupling coefficients
-% after shipping the demo delay line back. Ask Lisa what those coupling coefficients are.
-% perhaps change the coupling coefficients and see where the sweet spot is for snr improvement?
-%
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{}
+%\noaffiliation
 
 \date{\today}
 
-%copied directly from Gray's original arxiv paper
 \begin{abstract}
 Axions are a well motivated candidate for dark matter.  The most sensitive experiments searching for dark matter axions rely on the coupling of axions to the electromagnetic resonances of a microwave cavity immersed in a strong magnetic field.  The sensitivity of the experiment is proportional to the $Q$ of the resonance that is coupled to axions.
 To date, the resonators used in axion searches have all been passive, with $Q$s limited by power loss in the cavity walls.  I propose the use of active feedback resonators to increase the $Q$ of microwave cavity axion dark matter experiments by several orders of magnitude.
 This should allow experiments to significantly increase the rate at which they can test potential axion masses and couplings.
 \end{abstract}
 
+% insert suggested PACS numbers in braces on next line
 \pacs{}
+% insert suggested keywords - APS authors don't need to do this
+%\keywords{}
 
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
 \maketitle
 
-\section{Introduction} 
-%copied directly from Gray's original arxiv paper.
-
+% body of paper here - Use proper section commands
+% References should be done using the \cite, \ref, and \label commands
 The axion is a hypothetical particle that is both a candidate for dark matter and a result of the Peccei-Quinn solution to the strong CP problem~\cite{Peccei,Peccei_2,PhysRevLett.40.223,PhysRevLett.40.279,Preskill1983127,Abbott1983,ipser-sikivie}.
 Axions with masses below $10^{-3}$ eV are particularly interesting because they could be produced in sufficient quantities to account for dark matter~\cite{Turner199067}.
 For axions in this mass range the coupling between axions and photons, despite being exceptionally weak, provides the best chance of directly observing axion dark matter.
@@ -64,16 +108,11 @@ Loaded $Q$s of $10^5$ at 1 GHz have been achieved with copper cavities in axion 
 
 I present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
 
-\subsection{Axions, Dark Matter, and Microwave Cavities}
-
-\subsection{Technological Limitations, Overcoming them with Active Resonators}
-
-\section{Schematic}
-
 \begin{figure}
 \includegraphics[width=7cm]{figs/experiment_schematic.eps}
 \caption{\label{fig:experiment_schematic} Schematic of active feedback resonator for an axion experiment}
 \end{figure}
+
 
 \begin{figure}
 \includegraphics[width=6cm]{figs/equivalent_circuit.eps}
@@ -85,16 +124,13 @@ I present here a means of artificially increasing the $Q$ of the cavity resonanc
 \caption{\label{fig:amplitude_defs} Microwave cavity represented as three port device.}
 \end{figure}
 
+
 The use of active feedback resonators is a well established technique used in regenerative receivers~\cite{armstrong1914wireless}.
 It involves connecting positive feedback to a resonator at the appropriate phase and amplification such that the power lost each oscillation to the output and damping effects is nearly completely replaced.  
 This has the effect of increasing the $Q$ of the system.
 
 A schematic of a microwave cavity axion experiment with active feedback is shown in Fig.~\ref{fig:experiment_schematic}.   Power from axion to photon conversion exits the cavity via a strongly coupled antenna, some of which is sent to a detector.  The remainder of the power is amplified, phase shifted, and then fed back into the cavity via a weakly coupled antenna.  A filter may also be needed to select the desired mode. 
 
-
-\section{Theory}
-
-\subsection{Derive multiplicative factor to gain}
 To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  $G$ is the combined gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
 
 I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
@@ -138,7 +174,7 @@ Note that for a passive resonator $M=1$ and that systems with $M<0$ will oscilla
 
 I note that from the signal power derived in Refs.~\cite{Cavity_idea_2,PhysRevLett.80.2043},
 \begin{equation}
-\frac{|a_3^2|}{Q_{e3}}=g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
+\frac{|a_3^2|}{Q_{e3}}=\frac{1}{4}g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
 \end{equation}
 where $V$ is the volume of the microwave cavity, $B_0$ is the magnetic field strength, $\rho_a$ is the density of dark matter axions, $C$ is a mode dependent form factor of order 1, and $m_a$ is the axion mass.  
 $g_{a\gamma\gamma}$ is the axion-photon coupling strength, defined as $g_{a\gamma\gamma}=\frac{\alpha g_\gamma}{\pi f_a}$ where $\alpha$ is the fine structure constant, $f_a$ is the axion decay constant and $g_\gamma$ is an order unity model dependent factor.
@@ -146,156 +182,48 @@ $g_{a\gamma\gamma}$ is the axion-photon coupling strength, defined as $g_{a\gamm
  The power measured at the output of the system is thus
 \begin{equation}
 \label{eqn:rawsig}
-P_{\mathrm{signal}}=\frac{M^2Q_L^2}{Q_{e1}}g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
+P_{\mathrm{signal}}=\frac{M^2Q_L^2}{Q_{e1}}g_{a\gamma\gamma}^2VB_0^2\rho_a\frac{1}{m_a}
 \end{equation}
 
-It is important to note that for the isothermal halo model of dark matter axions,  the characteristic width of the axion signal is expected to correspond of a $Q$ of $10^6$ \cite{Cavity_idea}.   Experiments with a bandwidth smaller than the axion signal width sample only a subset of axions.  Thus the conservative estimate for signal power is
+For a fixed $M$, this power is maximized when the first antenna is critically coupled so that $Q_{e1}=2Q_{L}$.  It is also important to note that for the isothermal halo model of dark matter axions,  the characteristic width of the axion signal is expected to correspond of a $Q$ of $10^6$ \cite{Cavity_idea}.   Experiments with a bandwidth smaller than the axion signal width sample only a subset of axions.  Thus the conservative estimate for signal power is
 
 \begin{equation}
 \label{eqn:sig}
-P_{\mathrm{signal}}=\frac{M}{2}\min\left(MQ_L,10^6\right)g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a},
+P_{\mathrm{signal}}=\frac{M}{2}\min\left(MQ_L,10^6\right)g_{a\gamma\gamma}^2VB_0^2\rho_a\frac{1}{m_a},
 \end{equation}
 
 though it could be larger in models where the axion dark matter is unusually cold.
 
 The thermal noise from the physical temperature of the cavity and electronic noise of the amplifier are also magnified by the active feedback.
+The noise in an active feedback resonator, $T_n$ is minimized when
+\begin{equation}
+\frac{1}{Q_{e1}}=\frac{G}{Q_{e2}}
+\end{equation} 
+and has been calculated and measured in Ref.~\cite{noise_temp_afr} to be
+\begin{equation}
+T_n=\frac{MQ_L}{Q_{0}}T_{\mathrm{cav}}+\frac{G}{G-1}\frac{MQ_L}{Q_{0}}T_{\mathrm{amp}}
+\end{equation}
+where $T_{\mathrm{cav}}$ is the physical temperature of the cavity and $T_{\mathrm{amp}}$ is the noise temperature of the amplifier.   For a system with a gain $G\gg1$, a critically coupled antenna, and the conditions $Q_{e2},Q_{e3}\ll Q_{e1}$, this becomes
+\begin{equation}
+T_n\approx\frac{M}{2}\left(T_{\mathrm{cav}}+T_{\mathrm{amp}}\right).
+\end{equation}
 
-%\section{Theory copied from Ipython Notebook Writeup}
-%Referencing the image above, we use the following notation: $N_0$ is the cavity thermal noise power, $N_b$ is the amplifier noise power traveling away from the amplifier, and $N_a$ is the noise power traveling towards the amplifier (referenced to the input of the amplifier). I use lower case to denote the respective voltages, so $n_0$ is the cavity voltage noise, and $|n_0|^2 = N_0$, etc. $\sqrt{G}$ is the voltage gain of the amplifier, with the effective gain of the circuit is given by $\sqrt{G}S_{23}$. The relationship between the input amplitudes $a$ and output amplitudes $b$ is given by the S parameter matrix:
-%
-%$$
-%S = \left(\begin{array}{ccc}
-%-1 + 2Q_L/Q_{00} & 2 Q_L/\sqrt{Q_{00}Q_{1}} & 2Q_L/\sqrt{Q_{00} Q_2} \\
-%2 Q_L/\sqrt{Q_{00}Q_{1}} & -1 + 2Q_L/Q_{1} & 2Q_L/\sqrt{Q_{1} Q_2} \\
-%2 Q_L/\sqrt{Q_{00}Q_{2}} & 2Q_L/\sqrt{Q_{1} Q_2} & -1 + 2Q_L/Q_{2} \\
-%\end{array}\right)
-%$$
-%
-%(NOTE: there is a typo in the afr_noise paper by Ishikawa and co. - their $S_{13}$ entry is wrong.)
-%
-%My understanding of the notation here is that $Q_{00}$ is the unloaded Q of the cavity, $Q_L$ is the loaded Q of the cavity, $Q_1$ and $Q_2$ are quality factors parameterizing the coupling ports, and $Q_0$ is the active Q (unloaded).
-%
-%TODO: is the S parameter matrix In the language of coupling coefficients, $\beta_1 = \sqrt{\frac{Q_{00}}{Q_1}}$ and $\beta_2 = \sqrt{\frac{Q_{00}}{Q_2}}$.
-%
-%The relationship between the active Q and the other quality factors is given by:
-%
-%\begin{align}
-%\frac{1}{Q_0} = \frac{1}{Q_L} - 2\sqrt{\frac{G}{Q_1 Q_2}}.
-%\end{align}
-%
-%Physically, the above equation tells us that a loaded cavity quality factor will be further modified by the introduction of gain, which will act as a negative resistance. When 
-%
-%$$
-%\sqrt{G} = \frac{\sqrt{Q_1 Q_2}}{2 Q_L}
-%$$
-%
-%then the active quality factor goes to infinity, and the circuit becomes an oscillator. The equation above is the same as the condition that $S_{23}\sqrt{G} = 1$.
-%
-%Now that we've established our notation, we want to know what the output power would look like. If we take the output from port 1 ($b_1$) as the voltage we will be listening to, then $b_1$ has the form:
-%
-%$$
-%b_1(t)= S_{21} n_0 + S_{22} n_b + S_{23} \sqrt{G} \big(b_1(t- t_0) + n_a \big)
-%$$
-%
-%Note that we $b_1$ is evaluated at two different times in this equation - once at the current time $t$ but also at $t-t_0$, where $t_0 = L/c$ is the time it takes for a wave at port 1 to traverse the circuit's length $L$.
-%
-%The time-averaged power we expect then is:
-%
-%$$
-%<|b_1(t)|^2> + |S_{23}|^2 G <|b_1(t-t_0)|^2> - 2 S_{23} \sqrt{G} < b_1^*(t)b_1(t-t_0)> = |S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a.
-%$$
-%
-%where we assumed that there is no correlation between the various noise sources, e.g. $<n_0 n_b> = 0$.
-%
-%Let us assume a steady state solution such that $<|b(t)|^2> = <|b(t-t_0)|^2>$. The autocorrelation of the two $b_1(t)$ terms is given by (NOTE: ask Gray again about how this was gotten):
-%
-%$$
-%<b_1^*(t)b_1(t-t_0)> = <|b_1(t)|^2> e^{-\omega t_0/Q}
-%$$
-%
-%I drop the subscript $1$ on $b(t)$ for simplicity and denote it by $b_{noise}$. We can rewrite the output power (CHECK: hopefully my transform to frequency space is not sketchy) as
-%
-%$$
-%<|b_{noise}(\omega)|^2> = \frac{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q}}.
-%$$
-%
-%Finally, we can parametrize any additional phase shift in the circuit by rewriting $\sqrt{G} \rightarrow \sqrt{G}e^{i\theta}$, so
-%
-%$$
-%<|b_{noise}(\omega)|^2> = \frac{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q - i\theta}}.
-%$$
-%
-%Note that we've derived the output noise power in the case of noise signal, but the output power when a signal is injected into the system (ie $a_0 = \sqrt{\beta_0} p$) would only be modified to be:
-%
-%$$
-%<|b_{signal}(\omega)|^2> =\frac{|S_{21}|^2 \beta_0 P}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q - i\theta}}
-%$$
-%
-%so the SNR would be:
-%
-%$$
-%SNR = \frac{<|b_{signal}(\omega)|^2>}{<|b_{noise}(\omega)|^2>} = \frac{|S_{21}|^2 \beta_0 P}{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}
-%$$
-%
-%... this doesn't make any sense. Not sure what I did wrong here.
-%
-%A different approach would be to recognize that the active Q ($Q_0$) gains by one factor of the multiplier:
-%
-%$$
-%Q_0 = Q_L(1 - \sqrt{G_l})^{-1}
-%$$
-%
-%where $G_l$ is the loop gain ($\sqrt{G_l} = S_{23}\sqrt{G}$).
-%
-%Then notice that the real gain, (not just through one pass), is given by
-%
-%$A = n_{cav} + A\sqrt{G_l}$ so $A = n_{cav}/(1-\sqrt{G_l})$.
-%
-%so if that's the voltage all around gain, then the power gain (all throughout) is $P = N_{cav}/(1-\sqrt{G_l})^2$.
-%
-%Therefore, for $t_0 = 0$,
-%
-%$$
-%SNR = \frac{P_{in} ( 1- \sqrt{G_l})^2}{(1-\sqrt{G_l})^2 (T_{cav} + G_l T_a)} = \frac{P_{in}}{(T_{cav} + G_l T_a)}
-%$$
-%
-%and for $t_0 = 2.5$ $\mu$seconds,
-%
-%$$
-%SNR = \frac{P_{in} ( 1 + G_l)}{(1-\sqrt{G_l})^2 (T_{cav} + G_l T_a)}
-%$$
-%
-%In any case, for typical experimental parameters, we can plot the noise vs Q for different delay times, which correspond to our measurement configurations with and without the delay line in. See below.
+The noise bandwidth will be chosen to be the axion bandwidth for experiments with $MQ<10^6$, while experiments with higher $Q$ will use their full bandwidth.  This makes the noise power
 
-\section{Literature Review}
+\begin{equation}
+\label{eqn:noise}
+P_{\mathrm{noise}}=k_B\frac{M}{2}\left(T_{\mathrm{cav}}+T_{\mathrm{amp}}\right)\frac{f_0}{\max\left(MQ_L,10^6\right)}
+\end{equation}
 
-MENTION ARMSTRONG, MARK JONES
-SHOULD WE MENTION DISAGREEMENT BETWEEN ISAKAWA and ITALIAN?
+where $k_B$ is the Boltzmann constant and $f_0$ is the resonant frequency of the cavity.
 
-\section{SNR and Bandwidth}
+Combining equations \ref{eqn:sig} and \ref{eqn:noise} the signal to noise of an active resonator microwave cavity experiment will be
+\begin{equation}
+\mathrm{SNR}=M Q_L\frac{g_{a\gamma\gamma}VB_0^2\rho_aC}{k_B f_0 m_a\left(T_{\mathrm{cav}}+T_{\mathrm{amp}}\right)}
+\end{equation}
 
-\begin{align}
-\text{SNR expression}
-\end{align}
+Thus, despite the magnification of the noise level, the SNR of the system is proportional to $MQ_L$.  The sensitivity and scan speed of a microwave cavity dark matter axion experiment will scale with $M$.
 
-\begin{align}
-\text{FIGURE OF MERIT, ACCOUNTING FOR REDUCTION IN BW}
-\end{align}
-
-\section{Measurements}
-
-\subsection{Results}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figs/summary_plots}
-\caption{}
-\label{fig:summary_plots}
-\end{figure}
-
-\subsection{Comparison with Simulation}
-
-\section{Discussion}
 Values of $M$ have been reported as high as $10^4$ yielding $Q$s of $7\times10^7$ in active feedback resonators~\cite{:/content/aip/journal/rsi/84/8/10.1063/1.4817537} used for other purposes, but that were operated at frequencies that could be relevant to dark matter axion searches.
 This would suggest existing experiments could increase their SNR by several orders of magnitude by implementing active feedback.
 
@@ -303,8 +231,15 @@ The ADMX experiment is within an order of magnitude of the sensitivity necessary
 
 This work was supported in part by the U.S. Department of Energy under contract DE-SC0009800.
 
-\section{Wild Speculation}
+% If you have acknowledgments, this puts in the proper section head.
+%\begin{acknowledgments}
+% put your acknowledgments here.
+%\end{acknowledgments}
 
+% Create the reference section using BibTeX:
 \bibliography{2014_ouroboros}
 
-\end{document}  
+\end{document}
+%
+% ****** End of file apstemplate.tex ******
+
