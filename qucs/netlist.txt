@@ -1,0 +1,14 @@
+# Qucs 0.0.18  /Users/ana/.qucs/rlc_circuit_scratch.sch
+
+R:R1 _net0 _net1 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+L:L1 _net1 _net2 L="1 nH" I=""
+C:C1 _net2 _net4 C="1 pF" V=""
+.SP:SP1 Type="log" Start="1 GHz" Stop="6 GHz" Points="200" Noise="no" NoiseIP="1" NoiseOP="2" saveCVs="no" saveAll="no"
+Pac:P1 gnd _net3 Num="1" Z="50 Ohm" P="0 dBm" f="1 GHz" Temp="26.85"
+Pac:P2 gnd _net5 Num="2" Z="50 Ohm" P="0 dBm" f="1 GHz" Temp="26.85"
+Coupler:X2 _net3 _net0 _net10 _net11 k="0.9" phi="0" Z="50 Ohm"
+Coupler:X3 _net4 _net5 _net7 _net10 k="0.3" phi="0" Z="50 Ohm"
+PShift:X4 _net6 _net8 phi="0" Zref="50 Ohm"
+Amp:X1 _net9 _net8 G="1.1" Z1="50 Ohm" Z2="50 Ohm" NF="0 dB"
+COAX:Line1 _net9 _net7 er="2.29" rho="0.022e-6" mur="1" D="2.95 mm" d="0.9 mm" L="1500 mm" tand="4e-4" Temp="26.85"
+COAX:Line2 _net6 _net11 er="2.29" rho="0.022e-6" mur="1" D="2.95 mm" d="0.9 mm" L="1500 mm" tand="4e-4" Temp="26.85"

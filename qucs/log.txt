@@ -1,0 +1,34 @@
+Output:
+-------
+
+Starting new simulation on Tue 03. Feb 2015 at 20:23:08:360
+
+creating netlist... done.
+project location: 
+modules to load: 0
+factorycreate.size() is 0
+factorycreate has registered:
+parsing netlist...
+checking netlist...
+netlist content
+      1 Amp instances
+      1 C instances
+      1 L instances
+      1 R instances
+      2 Pac instances
+      1 PShift instances
+      1 SP instances
+      2 Coupler instances
+      2 COAX instances
+creating netlist...
+
+Simulation ended on Tue 03. Feb 2015 at 20:23:08:499
+Ready.
+
+
+
+
+Errors:
+-------
+
+

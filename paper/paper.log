@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  5 JAN 2015 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 MAR 2015 09:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,7 +310,13 @@ s-converted-to.pdf figs/equivalent_circuit.eps>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/equivalent_circu         Requested size: 170.71652pt x 179.04865pt.
+<figs/equivalent_circuit-eps-converted-to.pdf, id=2, 164.615pt x 172.645pt>
+File: figs/equivalent_circuit-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs/equivalent_circuit-eps-converted-to.pdf>
+Package pdftex.def Info: figs/equivalent_circuit-eps-converted-to.pdf used on i
+nput line 79.
+(pdftex.def)             Requested size: 170.71652pt x 179.04865pt.
 Package epstopdf Info: Source file: <figs/amplitude_definitions.eps>
 (epstopdf)                    date: 2015-01-02 14:27:36
 (epstopdf)                    size: 10290 bytes
@@ -329,44 +335,11 @@ File: figs/amplitude_definitions-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs/amplitude_definitions-eps-converted-to.pdf used o
 n input line 84.
 (pdftex.def)             Requested size: 170.71652pt x 97.42014pt.
-
-
-Package natbib Warning: Citation `armstrong1914wireless' on page 1 undefined on
- input line 88.
-
-[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig
-s/experiment_schematic-eps-converted-to.pdf>]
+ [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fi
+gs/experiment_schematic-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
  on input line 91.
-
-
-LaTeX Warning: Reference `fig:experiment_schematic' on page 2 undefined on inpu
-t line 92.
-
-
-LaTeX Warning: Reference `fig:equiv_circuit' on page 2 undefined on input line 
-98.
-
-
-Package natbib Warning: Citation `Montgomery:1948' on page 2 undefined on input
- line 98.
-
-
-LaTeX Warning: Reference `fig:amplitude_defs' on page 2 undefined on input line
- 100.
-
-
-Package natbib Warning: Citation `Cavity_idea_2' on page 2 undefined on input l
-ine 139.
-
-
-Package natbib Warning: Citation `PhysRevLett.80.2043' on page 2 undefined on i
-nput line 139.
-
-
-Package natbib Warning: Citation `Cavity_idea' on page 2 undefined on input lin
-e 152.
 
 [2 <./figs/equivalent_circuit-eps-converted-to.pdf> <./figs/amplitude_definitio
 ns-eps-converted-to.pdf>]
@@ -375,35 +348,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--274
  []
 
 
-./paper.tex:277: LaTeX Error: Environment align undefined.
+Overfull \hbox (51.36157pt too wide) in paragraph at lines 283--283
+[] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 \begin{align}
-                   
-? 
-./paper.tex:277: Emergency stop.
- ...                                              
-                                                  
-l.277 \begin{align}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+<figs/summary_plots.png, id=47, 1011.78pt x 542.025pt>
+File: figs/summary_plots.png Graphic file (type png)
 
- 
+<use figs/summary_plots.png>
+Package pdftex.def Info: figs/summary_plots.png used on input line 291.
+(pdftex.def)             Requested size: 510.0pt x 273.22008pt.
+
+Overfull \hbox (264.0pt too wide) in paragraph at lines 291--292
+ [][] 
+ []
+
+(./paper.bbl [3 <./figs/summary_plots.png>]) [4] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3490 strings out of 493117
- 48141 string characters out of 6135433
- 130645 words of memory out of 5000000
- 6939 multiletter control sequences out of 15000+600000
- 7029 words of font info for 25 fonts, out of 8000000 for 9000
+ 4188 strings out of 493117
+ 56843 string characters out of 6135433
+ 142865 words of memory out of 5000000
+ 7612 multiletter control sequences out of 15000+600000
+ 7627 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,28p,818b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
-./paper.tex:277:  ==> Fatal error occurred, no output PDF file produced!
-></usr/local/texlive/2014/tex
+ 38i,10n,28p,818b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/f
@@ -411,7 +388,7 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti9.pfb>
-Output written on paper.pdf (4 pages, 218679 bytes).
+Output written on paper.pdf (4 pages, 218664 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
