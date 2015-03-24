@@ -11,8 +11,8 @@
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \begin{document}
 
-\title{Working Title: Improving Dark Matter Axion Searches with Active Resonators}
-\author{G. Rybka, A. Malagon, L. McBride, K. Patel}
+\title{Improving Dark Matter Axion Searches with Active Resonators}
+\author{G. Rybka, A. Malagon, L. McBride, K. Patel, Jacob?}
 \email[]{grybka@uw.edu}
 \affiliation{University of Washington}
 \date{}                                           % Activate to display a given date or no date
@@ -34,6 +34,7 @@
 Axions are a well motivated candidate for dark matter.  The most sensitive experiments searching for dark matter axions rely on the coupling of axions to the electromagnetic resonances of a microwave cavity immersed in a strong magnetic field.  The sensitivity of the experiment is proportional to the $Q$ of the resonance that is coupled to axions.
 To date, the resonators used in axion searches have all been passive, with $Q$s limited by power loss in the cavity walls.  I propose the use of active feedback resonators to increase the $Q$ of microwave cavity axion dark matter experiments by several orders of magnitude.
 This should allow experiments to significantly increase the rate at which they can test potential axion masses and couplings.
+%this is too bold a claim; realistically we can only get to 10^6 before signal power plateaus.
 \end{abstract}
 
 \pacs{}
@@ -44,23 +45,42 @@ This should allow experiments to significantly increase the rate at which they c
 %copied directly from Gray's original arxiv paper.
 
 The axion is a hypothetical particle that is both a candidate for dark matter and a result of the Peccei-Quinn solution to the strong CP problem~\cite{Peccei,Peccei_2,PhysRevLett.40.223,PhysRevLett.40.279,Preskill1983127,Abbott1983,ipser-sikivie}.
-Axions with masses below $10^{-3}$ eV are particularly interesting because they could be produced in sufficient quantities to account for dark matter~\cite{Turner199067}.
-For axions in this mass range the coupling between axions and photons, despite being exceptionally weak, provides the best chance of directly observing axion dark matter.
+Axions with masses below $10^{-3}$ eV are particularly interesting because they could be produced in sufficient quantities to account for 
+%cold
+dark matter~\cite{Turner199067}.
+For axions in this mass range the coupling between axions and photons
+%say two photon coupling?
+, despite being exceptionally weak, provides the best chance of directly observing axion dark matter.
 
 The most sensitive dark matter axion searches to date have been of the ``microwave cavity" type.
+%somehow the assumption that axions form all of the dark matter halo is lost...
 These experiments rely on the conversion of axions from the local dark matter halo into photons in a strong magnetic field.
 This conversion is resonantly enhanced when the resonant frequency of the microwave cavity is equal to the frequency of the photons produced from the axion conversion~\cite{PhysRevLett.51.1415}.
+%again, the missing information is that axions are non-relativistic, better way to say it is that the energy deposited into the electromagnetic field excites a resonant mode of the cavity. this might be a good time to bring in the energy dispersion.
 Operation of these experiments involves slowly tuning the resonant frequency of the microwave cavity to explore different potential axion masses and searching for an excess of power deposited from dark matter axion conversion.
-Microwave cavity experiments have been demonstrated to have the sensitivity required to detect optimistically coupled dark matter axions over a small mass range, but as of yet, axions have not been detected in a microwave cavity experiment~\cite{PhysRevLett.104.041301}.
+Microwave cavity experiments have been demonstrated to have the sensitivity required to detect optimistically coupled dark matter axions over a small mass range,
+%maybe say explicitly from 2-4 microeV
+but as of yet, axions have not been detected in a microwave cavity experiment~\cite{PhysRevLett.104.041301}.
 
-The signal power in microwave cavity experiments is proportional to a number of factors, including the local density of dark matter, the strength of the magnetic field, the volume of the cavity, and the resonant quality factor $Q$ of the resonance being used.
+The signal power in microwave cavity experiments is proportional to a number of factors, including the local density of dark matter, the strength of the magnetic field, the volume of the cavity, and the resonant 
+%loaded
+quality factor $Q$ of the resonance being used:
+%give equation
+\begin{align}
+P_{sig} = g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{max}(Q_{loaded},Q_a)
+\end{align}
 The primary background is the thermal noise from the physical temperature of the cavity and the electronic noise from the first stage amplifier.  
 The figure of merit for a microwave cavity experiment is the instantaneous axion signal to noise ratio (SNR).
+%why emphasize instanteneous?
 Experiments with a larger SNR can be sensitive to more pessimistic axion photon couplings for a given frequency tuning speed or tune more quickly for a given axion photon coupling sensitivity.
 
 Increasing the cavity $Q$ is one way to increase SNR in a microwave cavity experiment; the speed at which the cavity frequency can be tuned while remaining sensitive to a given axion photon coupling is linearly proportional to $Q$~\cite{Peng2000569}.
 The presence of a strong magnetic field precludes the use of high-$Q$ superconducting cavities in these experiments, so the cavities are usually made of or coated with copper.
+%add, ``...although R&D is being done with superconducting thing films on the walls...''
 Loaded $Q$s of $10^5$ at 1 GHz have been achieved with copper cavities in axion experiments~\cite{Peng2000569}.  Higher frequency cavities typically have smaller $Q$s.
+%mention anomalous skin depth limit, or scaling of Q with frequency as f^-2/3?
+%The quality factor for a passive resonator depends solely on the frequency, geometry, and material of the resonator.
+For a cylindrical copper cavity the Q scales as $Q \propto f^{-2/3}$....skin depth.
 
 I present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
 
@@ -88,13 +108,17 @@ I present here a means of artificially increasing the $Q$ of the cavity resonanc
 The use of active feedback resonators is a well established technique used in regenerative receivers~\cite{armstrong1914wireless}.
 It involves connecting positive feedback to a resonator at the appropriate phase and amplification such that the power lost each oscillation to the output and damping effects is nearly completely replaced.  
 This has the effect of increasing the $Q$ of the system.
-
+%perhaps say here that it will also amplify the noise of the system. However we show that the SNR improves square-rootishly with multiplier.
 A schematic of a microwave cavity axion experiment with active feedback is shown in Fig.~\ref{fig:experiment_schematic}.   Power from axion to photon conversion exits the cavity via a strongly coupled antenna, some of which is sent to a detector.  The remainder of the power is amplified, phase shifted, and then fed back into the cavity via a weakly coupled antenna.  A filter may also be needed to select the desired mode. 
 
 
 \section{Theory}
 
 \subsection{Derive multiplicative factor to gain}
+%We can derive the increase in Q and noise using an equivalent circuit model of the cavity and feedback system.
+%We represent the cavity as an RLC circuit, with impedance transformers representing the coupling ports from the cavity to the external system.
+%An amplifier with voltage gain $\sqrt{G_a}$ and equivalent noise temperature $T_a$ is placed in the feedback loop along with a phase shifter.
+%The closed loop gain of the system, assuming no loss in the phase shifter, is then $\sqrt{G_l} = S_{12}\sqrt{G}$. When 
 To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  $G$ is the combined gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
 
 I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
@@ -135,11 +159,12 @@ where I define $M$ to be the apparent multiplier to the $Q$ of the system
 M=\left(1-2Q_L\sqrt{\frac{G}{Q_{e1}Q_{e2}}}\right)^{-1}.
 \end{equation}
 Note that for a passive resonator $M=1$ and that systems with $M<0$ will oscillate regardless of the presence of an axion signal. 
-
+%should that be M>1?
 I note that from the signal power derived in Refs.~\cite{Cavity_idea_2,PhysRevLett.80.2043},
 \begin{equation}
 \frac{|a_3^2|}{Q_{e3}}=g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
 \end{equation}
+%remove this it doesn't make any sense to discuss amplitude of signal before entering the cavity.
 where $V$ is the volume of the microwave cavity, $B_0$ is the magnetic field strength, $\rho_a$ is the density of dark matter axions, $C$ is a mode dependent form factor of order 1, and $m_a$ is the axion mass.  
 $g_{a\gamma\gamma}$ is the axion-photon coupling strength, defined as $g_{a\gamma\gamma}=\frac{\alpha g_\gamma}{\pi f_a}$ where $\alpha$ is the fine structure constant, $f_a$ is the axion decay constant and $g_\gamma$ is an order unity model dependent factor.
 
@@ -157,7 +182,8 @@ P_{\mathrm{signal}}=\frac{M}{2}\min\left(MQ_L,10^6\right)g_{a\gamma\gamma}^2VB_0
 \end{equation}
 
 though it could be larger in models where the axion dark matter is unusually cold.
-
+%I feel like this way of presenting it is misleading. It's implying we may very well have colder dark matter and could enhance our sensitivity,
+%but the reality is that we just don't know, so have to stick to the isothermal model.
 The thermal noise from the physical temperature of the cavity and electronic noise of the amplifier are also magnified by the active feedback.
 
 %\section{Theory copied from Ipython Notebook Writeup}
@@ -273,9 +299,9 @@ MENTION ARMSTRONG, MARK JONES
 SHOULD WE MENTION DISAGREEMENT BETWEEN ISAKAWA and ITALIAN?
 
 \section{SNR and Bandwidth}
-
+The SNR is given by the ratio of the signal power to the fluctuations in the noise power. We assume that we measure the signal for time $\tau$ with a frequency resolution equal to the width of the axion signal, $B_a$:
 \begin{align}
-\text{SNR expression}
+SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \tau}
 \end{align}
 
 \begin{align}
