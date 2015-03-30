@@ -1,19 +1,29 @@
-This is TeX, Version 3.141592 (Web2C 7.5.6) (format=tex 2014.12.8)  24 MAR 2015 09:01
-**paper.tex
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2014.12.8)  29 MAR 2015 20:42
+entering extended mode
+ %&-line parsing enabled.
+**\nonstopmode\input paper.tex
 (./paper.tex
-! Undefined control sequence.
-l.1 \documentclass
-                  [aps,prl,twocolumn,groupedaddress]{revtex4-1}
-? 
-! Interruption.
-<to be read again> 
-                   [
-l.1 \documentclass[
-                   aps,prl,twocolumn,groupedaddress]{revtex4-1}
-? ^^D
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-H for help, X to quit.
-? X
+
+! LaTeX Error: File `revtex4-1.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.2 ^^M
+       
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 10 strings out of 256217
+ 196 string characters out of 1917095
+ 48804 words of memory out of 1500000
+ 3393 multiletter control sequences out of 10000+200000
+ 3640 words of font info for 14 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 10i,0n,7p,90b,8s stack positions out of 5000i,500n,6000p,200000b,15000s
 No pages of output.

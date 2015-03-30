@@ -72,6 +72,11 @@ P_{sig} = \eta g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{min}(Q_{loa
 The primary background is the thermal noise from the physical temperature of the cavity and the electronic noise from the first stage amplifier.  
 The figure of merit for a microwave cavity experiment is the instantaneous axion signal to noise ratio (SNR).
 %why emphasize instanteneous?
+The SNR is given by the ratio of the signal power to the fluctuations in the noise power. We assume that we measure the signal for time $\tau$ with a frequency resolution equal to the width of the axion signal, $B_a$:
+\begin{align}
+SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \tau}
+\end{align}
+
 Experiments with a larger SNR can be sensitive to more pessimistic axion photon couplings for a given frequency tuning speed or tune more quickly for a given axion photon coupling sensitivity.
 
 Increasing the cavity $Q$ is one way to increase SNR in a microwave cavity experiment; the speed at which the cavity frequency can be tuned while remaining sensitive to a given axion photon coupling is linearly proportional to $Q$~\cite{Peng2000569}.
@@ -143,10 +148,10 @@ Therefore the time averaged signal power is
 P_s = \bar{e_a}^2\frac{1}{(1 - GS_{21})^2}
 \end{equation}
 
-This implies that the enhanced SNR from the feedback loop will be greater than the passive SNR, $SNR_0$, (assuming the same integration time and axion bandwidth) in the limit where the roundtrip time is much longer than the coherence time of the cavity,
+This implies that the enhanced SNR from the feedback loop will be greater than the passive SNR, $SNR_0$, (assuming the same integration time and axion bandwidth) in the limit where the roundtrip time is much longer than the coherence time of the cavity, (need to add extra factor because axion signal will additionally be enhanced by Q).
 
 \begin{equation}
-SNR_{e}/SNR_{0} =\frac{(1-G^2|S_{21}|^2}{(1-GS_{21})^2} = 1 + \frac{2GS_{21}}{1-GS_{21}}
+SNR_{e}/SNR_{0} =P_{s, enhanced}/P_{s,original}\frac{(1-G^2|S_{21}|^2}{(1-GS_{21})^2} = 1/(1-GS_{21})(1 + \frac{2GS_{21}}{1-GS_{21}}
 \end{equation}
 In most cases we can achieve loaded Q's of only an order of magnitude below the axion linewidth, so we need a combined feedback of $GS_{21} = .8$ to improve the Q by an order of magnitude.
 
@@ -155,6 +160,8 @@ When $t_1 \approx \tau$ we can no longer ignore the cross terms and end up with 
 \begin{equation}
 P_n = (\bar{c_2}^2 + \bar{n_a}^2)\frac{1}{1 - G^2|S_{21}|^2}\frac{1}{1-2e^{-t/\tau}GS_{21}}
 \end{equation}
+
+One subtlety is that if there is only phase shifter for multiple frequencies within the feedback loop, one will not be able to hold the requirement that $\omega t = 2\pi$ when the roundtrip travel time $t$ is long; that is to say, interference fringes will begin to be observed within the bandwidth of the cavity when tis of the order $t \approx \pi Q_e / \omega_0$, so in order to avoid this effect, one would want a delay which longer than the coherence time of the cavity, but not too long so as to avoid deconstructive interference among frequencies slightly off resonance. Another solution would be to multiplex the signal and give each frequency a slightly different phase shift so that all the frequencies in the cavity bandwidth receive a 2$\pi$ phase shift around the loop.
 
 As well, the enhanced Q (again assuming a phase shift of $2\pi$), is given by \cite{ref:frenchpaper}
 \begin{equation}
@@ -166,7 +173,7 @@ Similarly
 $Q_{e1} = \omega U / P_{port1}$ and $Q_{e2} = \omega U / P_{port2}$.
 Therefore the loaded passive Q is $Q_L^{-1} = P_{total lost}/\omega U =  = Q_{e1}^{-1} + Q_{e2}^{-2} + Q_{unloaded}^{-1}$.
 Then with the feedback loop some power is regained, so 
-$Q_e^{-1} = 1/\omega U (P_{port1} + P_{port2} + P_{walls} - P_{feedback}) = Q_L
+$Q_e^{-1} = 1/\omega U (P_{port1} + P_{port2} + P_{walls} - P_{feedback}) = Q_L$
 %% I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
 %% \begin{equation}
 %% S = \left( \begin{array}{ccc}
@@ -217,19 +224,19 @@ $Q_e = \frac{Q_0}{1 + \beta_1 + \beta_2 - 2G\sqrt{\beta_1 \beta_2}}$
 
 Note that for a passive resonator $M=1$ and that systems with $M<0$ will oscillate regardless of the presence of an axion signal. 
 %should that be M>1?
-I note that from the signal power derived in Refs.~\cite{Cavity_idea_2,PhysRevLett.80.2043},
-\begin{equation}
-\frac{|a_3^2|}{Q_{e3}}=g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
-\end{equation}
-%remove this it doesn't make any sense to discuss amplitude of signal before entering the cavity.
-where $V$ is the volume of the microwave cavity, $B_0$ is the magnetic field strength, $\rho_a$ is the density of dark matter axions, $C$ is a mode dependent form factor of order 1, and $m_a$ is the axion mass.  
-$g_{a\gamma\gamma}$ is the axion-photon coupling strength, defined as $g_{a\gamma\gamma}=\frac{\alpha g_\gamma}{\pi f_a}$ where $\alpha$ is the fine structure constant, $f_a$ is the axion decay constant and $g_\gamma$ is an order unity model dependent factor.
+%% I note that from the signal power derived in Refs.~\cite{Cavity_idea_2,PhysRevLett.80.2043},
+%% \begin{equation}
+%% \frac{|a_3^2|}{Q_{e3}}=g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
+%% \end{equation}
+%% %remove this it doesn't make any sense to discuss amplitude of signal before entering the cavity.
+%% where $V$ is the volume of the microwave cavity, $B_0$ is the magnetic field strength, $\rho_a$ is the density of dark matter axions, $C$ is a mode dependent form factor of order 1, and $m_a$ is the axion mass.  
+%% $g_{a\gamma\gamma}$ is the axion-photon coupling strength, defined as $g_{a\gamma\gamma}=\frac{\alpha g_\gamma}{\pi f_a}$ where $\alpha$ is the fine structure constant, $f_a$ is the axion decay constant and $g_\gamma$ is an order unity model dependent factor.
 
- The power measured at the output of the system is thus
-\begin{equation}
-\label{eqn:rawsig}
-P_{\mathrm{signal}}=\frac{M^2Q_L^2}{Q_{e1}}g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
-\end{equation}
+%%  The power measured at the output of the system is thus
+%% \begin{equation}
+%% \label{eqn:rawsig}
+%% P_{\mathrm{signal}}=\frac{M^2Q_L^2}{Q_{e1}}g_{a\gamma\gamma}^2VB_0^2\rho_aC\frac{1}{m_a}
+%% \end{equation}
 
 It is important to note that for the isothermal halo model of dark matter axions,  the characteristic width of the axion signal is expected to correspond of a $Q$ of $10^6$ \cite{Cavity_idea}.   Experiments with a bandwidth smaller than the axion signal width sample only a subset of axions.  Thus the conservative estimate for signal power is
 
@@ -277,25 +284,28 @@ though it could be larger in models where the axion dark matter is unusually col
 %
 %In any case, for typical experimental parameters, we can plot the noise vs Q for different delay times, which correspond to our measurement configurations with and without the delay line in. See below.
 
-\section{Literature Review}
+\section{Experimental Study}
+In order to experimentally confirm the results of the analysis presented above, a microwave cavity with feedback loop was built and tested, as illustrated in Figure x. The enhanced cavity Q was varied by varying the attenuation in the loop and the output spectrum measured on a spectrum analyzer. A test tone was injected into a third port to measure the signal to noise ratio for various values of the enhanced Q. The phase was adjusted to provide maximum power output.
 
-MENTION ARMSTRONG, MARK JONES
-SHOULD WE MENTION DISAGREEMENT BETWEEN ISAKAWA and ITALIAN?
+\begin{tabular}{|c|c|}
+\hline
+Parameters & Values \\ \hline
+$f_0$ & 2.256$\times 10^9$ Hz \\
+$Q_L$ & 1000 \\
+$Q_0$ & ? \\
+$\beta_1$ & ? \\
+$\beta_2$ & ? \\
+$T_{cav}$ & 300 K \\
+$T_{amp}$ & 300 K \\
+$G_a$ & ? dB \\
+Averaging Time & (what is 25 avgs in secs?) \\
+Time Delay & 2.4 $\mu$s \\
+Bandwidth & ? wrote it down on a napkin somewhere? \\
+\hline
+\end{tabular}
 
-\section{SNR and Bandwidth}
-The SNR is given by the ratio of the signal power to the fluctuations in the noise power. We assume that we measure the signal for time $\tau$ with a frequency resolution equal to the width of the axion signal, $B_a$:
-\begin{align}
-SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \tau}
-\end{align}
-
-\begin{align}
-\text{FIGURE OF MERIT, ACCOUNTING FOR REDUCTION IN BW}
-\end{align}
-
-\section{Measurements}
-
-\subsection{Results}
-
+As we injected a constant test tone and don't have a signal which scales with the enhanced Q, we expect only to observe an improvement in SNR of a factor of M.
+The experiment was made with and without a delay line whose delay of $2.4\mu$seconds was a factor of 100 greater than the coherence time of the cavity. The improvement in SNR vs. enhanced Q is shown in Figure xx, for the delay line in and for no delay line. The improvement scales as expected for both cases.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figs/summary_plots}
@@ -304,12 +314,17 @@ SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \
 \end{figure}
 
 \section{Discussion}
-Values of $M$ have been reported as high as $10^4$ yielding $Q$s of $7\times10^7$ in active feedback resonators~\cite{:/content/aip/journal/rsi/84/8/10.1063/1.4817537} used for other purposes, but that were operated at frequencies that could be relevant to dark matter axion searches.
-This would suggest existing experiments could increase their SNR by several orders of magnitude by implementing active feedback.
+
+We see in this prototype that with a very low Q cavity one can enhance the Q by a factor of more than a thousand, and see a signal to noise improvement of a factor of 10. This is extremely encouraging as a proof of principle, and shows that one can get to Q's comparable with the axion linewidth with the simple techniqure of active feedback. This will increase the scan rate of microwave cavity experiments roughly by a factor of 3 and is simpler than research currently under way to improve the Q by making superconducting films on the walls of copper cavities. The active feedback technique becomes increasingly important for high-frequency axion experiments, as the passive limit for the Q scales as $f^{-1/3}$.
+
+Delay lines with time delays longer than a few microseconds are difficult to make with analog technology; at 1 GHz and Q's of 100,000, we would need a delay of ten microseconds. Digital delay lines using FPGAs would be the natural way to implement the necessary delays.
+
+%% Values of $M$ have been reported as high as $10^4$ yielding $Q$s of $7\times10^7$ in active feedback resonators~\cite{:/content/aip/journal/rsi/84/8/10.1063/1.4817537} used for other purposes, but that were operated at frequencies that could be relevant to dark matter axion searches.
+%% This would suggest existing experiments could increase their SNR by several orders of magnitude by implementing active feedback.
 
 The ADMX experiment is within an order of magnitude of the sensitivity necessary to be sensitive to pessimistically coupled axion dark matter.  The addition of active feedback, along with other planned upgrades, should allow it to to be sensitive to pessimistically coupled axion dark matter even in models where axions constitute a very small fraction of the dark matter.  The use of active feedback will also allow future experiments to operate at higher frequencies, where previous microwave cavity experiments have not had the sensitivity necessary to detect axion dark matter with a reasonable scan speed.
 
-This work was supported in part by the U.S. Department of Energy under contract DE-SC0009800.
+This work was supported in part by the U.S. Department of Energy under contract DE-SC0009800. A.M. would like to thank Ben Brubaker for helpful discussions.
 
 \bibliography{2014_ouroboros}
 
