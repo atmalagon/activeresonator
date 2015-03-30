@@ -12,7 +12,7 @@
 \begin{document}
 
 \title{Improving Dark Matter Axion Searches with Active Resonators}
-\author{G. Rybka, A. Malagon, L. McBride, K. Patel, Jacob?}
+\author{G. Rybka, A. Malagon, L. McBride, K. Patel}
 \email[]{grybka@uw.edu}
 \affiliation{University of Washington}
 \date{}                                           % Activate to display a given date or no date
@@ -67,7 +67,7 @@ The signal power in microwave cavity experiments is proportional to a number of 
 quality factor $Q$ of the resonance being used:
 %give equation
 \begin{align}
-P_{sig} = g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{max}(Q_{loaded},Q_a)
+P_{sig} = \eta g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{min}(Q_{loaded},Q_a)
 \end{align}
 The primary background is the thermal noise from the physical temperature of the cavity and the electronic noise from the first stage amplifier.  
 The figure of merit for a microwave cavity experiment is the instantaneous axion signal to noise ratio (SNR).
@@ -84,11 +84,7 @@ For a cylindrical copper cavity the Q scales as $Q \propto f^{-2/3}$....skin dep
 
 I present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
 
-\subsection{Axions, Dark Matter, and Microwave Cavities}
-
-\subsection{Technological Limitations, Overcoming them with Active Resonators}
-
-\section{Schematic}
+\section{Theory of Method}
 
 \begin{figure}
 \includegraphics[width=7cm]{figs/experiment_schematic.eps}
@@ -111,53 +107,114 @@ This has the effect of increasing the $Q$ of the system.
 %perhaps say here that it will also amplify the noise of the system. However we show that the SNR improves square-rootishly with multiplier.
 A schematic of a microwave cavity axion experiment with active feedback is shown in Fig.~\ref{fig:experiment_schematic}.   Power from axion to photon conversion exits the cavity via a strongly coupled antenna, some of which is sent to a detector.  The remainder of the power is amplified, phase shifted, and then fed back into the cavity via a weakly coupled antenna.  A filter may also be needed to select the desired mode. 
 
-
-\section{Theory}
-
-\subsection{Derive multiplicative factor to gain}
 %We can derive the increase in Q and noise using an equivalent circuit model of the cavity and feedback system.
 %We represent the cavity as an RLC circuit, with impedance transformers representing the coupling ports from the cavity to the external system.
 %An amplifier with voltage gain $\sqrt{G_a}$ and equivalent noise temperature $T_a$ is placed in the feedback loop along with a phase shifter.
 %The closed loop gain of the system, assuming no loss in the phase shifter, is then $\sqrt{G_l} = S_{12}\sqrt{G}$. When 
-To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  $G$ is the combined gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
+To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  These external quality factors can be defined in terms of the unloaded Q and the coupling coefficients $\beta_1$ and $\beta_2$, which represent respectively the fraction of power lost out of port 1 or port 2 compared to the power lost to the walls: $Q_{e1} = Q_0/\beta_1$ and $Q_{e2} = Q_0/\beta_2$. $G$ is the combined gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
 
-I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
-\begin{equation}
-S_{\mathrm{cavity}}=
-\left( \begin{array}{ccc}
-		\frac{2Q_L}{Q_{e1}}-1 & \frac{2Q_L}{\sqrt{Q_{e1}Q_{e2}}} & \frac{2Q_L}{\sqrt{Q_{e1}Q_{e3}}}  \\
-		\frac{2Q_L}{\sqrt{Q_{e1}Q_{e2}}} & 1-\frac{2Q_L}{Q_{e2}} & \frac{2Q_L}{\sqrt{Q_{e2}Q_{e3}}}  \\
-		\frac{2Q_L}{\sqrt{Q_{e1}Q_{e3}}} &  \frac{2Q_L}{\sqrt{Q_{e2}Q_{e3}}} &  1-\frac{2Q_L}{Q_{e3}} \\
-		\end{array}\right)
-\end{equation}
-    assuming the resonant frequency of the cavity has been tuned to the axion frequency.
+The cavity is fully characterized by the scattering matrix S and the noise amplitudes $c_1$ and $c_2$ radiated by the cavity into cold matched loads. Element $S_{21}$ is equal to the voltage amplification factor.
 
-The output amplitude $b_1$ can be determined with the cavity $S$ matrix
+Let us look at the amplitude of the wave at the output of port 2, assuming that all components are impedance matched and that isolators are placed at the ports to prevent reflected waves. If port 2 is critically coupled, then the noise wave at its output is equal to $c_2^2 =kT_{cav}B$, where B is the bandwidth of the detector.(G is the voltage gain of the amplifier and n_a the noise wave associated with it.)
+
+The time averaged noise power of the output is then
 \begin{equation}
-\left(\begin{array}{c}
-b_1\\
-b_2\\
-b_3\\
-\end{array}\right)
-=
-S_{\mathrm{cavity}}\left(\begin{array}{c}
-a_1\\
-a_2\\
-a_3\\
-\end{array}\right),
+P_n = <|(c_2(t) + n_a(t)) + (c_2(t-t_1)+n_a(t-t_1))GS_{21} + (c_2(t-2t_1)+n_a(t-2t_1))G^2S_{21}^2 + \ldots|^2>
 \end{equation}
-the effect of the amplifier and phase shifter
+The amplifier noise $n_a$ and the thermal noise from the cavity $c_2$ are independent, hence $<c_2n_a> = 0$, and also in the steady state $<c_2(t)>^2 = \bar{c_2}$ is independent of time, so
+
 \begin{equation}
-a_2=\sqrt{G}b_1e^{i\delta},
+P_n = (\bar{c_2}^2 + \bar{n_a}^2)\frac{1}{1 - G^2|S_{21}|^2} + \text{cross-terms} \\
 \end{equation}
-and $a_1=0$.   I will take $\delta$ to have been chosen to be an integral multiple of $2\pi$.  This gives
+where the cross-terms hold the information about the coherence of the noise between feedback rounds. Any signal entering the cavity undergoes exponential decay, so the expectation value of the cross terms goes as $<(c_2(t-nt_1)c_2(t-mt_1)> = \bar{c_2}^2e^(-(|n-m|)t_1/\tau)$, where $\tau = Q_L/\omega_0$ is the coherence time of the cavity. One can see that when the roundtrip time around the feedback loop is much larger than the coherence time, $t_1 \gg \tau$, the cross terms are exponentially suppressed and the feedback loop and amplifier enhance the original noise temperature of the cavity by a factor:
 \begin{equation}
-b_1=\frac{2MQ_L}{\sqrt{Q_{e1}Q_{e3}}} a_3
+T_n = T_{cav}[1+\frac{T_a}{T_{cav}\frac{1}{1-G^2|S_{21}|^2}
 \end{equation}
-where I define $M$ to be the apparent multiplier to the $Q$ of the system
+
+The analysis is slightly different for the signal power. We treat the axion-converted signal as a continuous source with amplitude $e_a$. Then the signal power observed at the output of port 2 (with the feedback loop is
 \begin{equation}
-M=\left(1-2Q_L\sqrt{\frac{G}{Q_{e1}Q_{e2}}}\right)^{-1}.
+P_s = <|e_a(t) + e_a(t-t_1)GS_{21} + e_a(t-2t_1)G^2S_{21}^2 + \ldots|^2>
 \end{equation}
+
+and as long as \omega t_1 is a multiple of $2\pi$, $e_a(t-nt_1) = e_a(t)$.
+
+Therefore the time averaged signal power is
+\begin{equation}
+P_s = \bar{e_a}^2\frac{1}{(1 - GS_{21})^2}
+\end{equation}
+
+This implies that the enhanced SNR from the feedback loop will be greater than the passive SNR, $SNR_0$, (assuming the same integration time and axion bandwidth) in the limit where the roundtrip time is much longer than the coherence time of the cavity,
+
+\begin{equation}
+SNR_{e}/SNR_{0} =\frac{(1-G^2|S_{21}|^2}{(1-GS_{21})^2} = 1 + \frac{2GS_{21}}{1-GS_{21}}
+\end{equation}
+In most cases we can achieve loaded Q's of only an order of magnitude below the axion linewidth, so we need a combined feedback of $GS_{21} = .8$ to improve the Q by an order of magnitude.
+
+When $t_1 \approx \tau$ we can no longer ignore the cross terms and end up with a noise power of
+
+\begin{equation}
+P_n = (\bar{c_2}^2 + \bar{n_a}^2)\frac{1}{1 - G^2|S_{21}|^2}\frac{1}{1-2e^{-t/\tau}GS_{21}}
+\end{equation}
+
+As well, the enhanced Q (again assuming a phase shift of $2\pi$), is given by \cite{ref:frenchpaper}
+\begin{equation}
+Q_e = Q_L\frac{1}{1-GS_{21}}
+\end{equation}
+you can see this by noting that the Q is a measure of how much a signal builds up; since the signal builds up by 
+$Q_{unloaded} = \omega U / P_{walls}$.
+Similarly
+$Q_{e1} = \omega U / P_{port1}$ and $Q_{e2} = \omega U / P_{port2}$.
+Therefore the loaded passive Q is $Q_L^{-1} = P_{total lost}/\omega U =  = Q_{e1}^{-1} + Q_{e2}^{-2} + Q_{unloaded}^{-1}$.
+Then with the feedback loop some power is regained, so 
+$Q_e^{-1} = 1/\omega U (P_{port1} + P_{port2} + P_{walls} - P_{feedback}) = Q_L
+%% I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
+%% \begin{equation}
+%% S = \left( \begin{array}{ccc}
+%%   -1 + 2 \beta_1 (1 + \beta_1 + \beta_2)^{-1} & 2\sqrt{\beta_1\beta_2}(1 + \beta_1 + \beta_2)^{-1} \\
+%%   2\sqrt{\beta_1\beta_2}(1 + \beta_1 + \beta_2)^{-1} &   -1 + 2 \beta_2 (1 + \beta_1 + \beta_2)^{-1} \\
+%%   \end{array}\right)
+%% \end{equation}
+
+%% \begin{equation}
+%% S_{\mathrm{cavity}}=
+%% \left( \begin{array}{ccc}
+%% 		\frac{2Q_L}{Q_{e1}}-1 & \frac{2Q_L}{\sqrt{Q_{e1}Q_{e2}}} & \frac{2Q_L}{\sqrt{Q_{e1}Q_{e3}}}  \\
+%% 		\frac{2Q_L}{\sqrt{Q_{e1}Q_{e2}}} & 1-\frac{2Q_L}{Q_{e2}} & \frac{2Q_L}{\sqrt{Q_{e2}Q_{e3}}}  \\
+%% 		\frac{2Q_L}{\sqrt{Q_{e1}Q_{e3}}} &  \frac{2Q_L}{\sqrt{Q_{e2}Q_{e3}}} &  1-\frac{2Q_L}{Q_{e3}} \\
+%% 		\end{array}\right)
+%% \end{equation}
+    assuming the resonant frequency of the cavity has been tuned to the axion frequency. 
+
+%% The output amplitude $b_1$ can be determined with the cavity $S$ matrix
+%% \begin{equation}
+%% \left(\begin{array}{c}
+%% b_1\\
+%% b_2\\
+%% b_3\\
+%% \end{array}\right)
+%% =
+%% S_{\mathrm{cavity}}\left(\begin{array}{c}
+%% a_1\\
+%% a_2\\
+%% a_3\\
+%% \end{array}\right),
+%% \end{equation}
+%% the effect of the amplifier and phase shifter
+%% \begin{equation}
+%% a_2=\sqrt{G}b_1e^{i\delta},
+%% \end{equation}
+%% and $a_1=0$.   I will take $\delta$ to have been chosen to be an integral multiple of $2\pi$.  This gives
+%% \begin{equation}
+%% b_1=\frac{2MQ_L}{\sqrt{Q_{e1}Q_{e3}}} a_3
+%% \end{equation}
+%% where I define $M$ to be the apparent multiplier to the $Q$ of the system
+%% \begin{equation}
+%% M=\left(1-2Q_L\sqrt{\frac{G}{Q_{e1}Q_{e2}}}\right)^{-1}.
+%% \end{equation}
+
+so that the enhanced cavity Q has a maximum value of 
+$Q_e = \frac{Q_0}{1 + \beta_1 + \beta_2 - 2G\sqrt{\beta_1 \beta_2}}$
+
 Note that for a passive resonator $M=1$ and that systems with $M<0$ will oscillate regardless of the presence of an axion signal. 
 %should that be M>1?
 I note that from the signal power derived in Refs.~\cite{Cavity_idea_2,PhysRevLett.80.2043},
@@ -184,87 +241,14 @@ P_{\mathrm{signal}}=\frac{M}{2}\min\left(MQ_L,10^6\right)g_{a\gamma\gamma}^2VB_0
 though it could be larger in models where the axion dark matter is unusually cold.
 %I feel like this way of presenting it is misleading. It's implying we may very well have colder dark matter and could enhance our sensitivity,
 %but the reality is that we just don't know, so have to stick to the isothermal model.
-The thermal noise from the physical temperature of the cavity and electronic noise of the amplifier are also magnified by the active feedback.
+%% The thermal noise from the physical temperature of the cavity and electronic noise of the amplifier are also magnified by the active feedback.
 
-%\section{Theory copied from Ipython Notebook Writeup}
-%Referencing the image above, we use the following notation: $N_0$ is the cavity thermal noise power, $N_b$ is the amplifier noise power traveling away from the amplifier, and $N_a$ is the noise power traveling towards the amplifier (referenced to the input of the amplifier). I use lower case to denote the respective voltages, so $n_0$ is the cavity voltage noise, and $|n_0|^2 = N_0$, etc. $\sqrt{G}$ is the voltage gain of the amplifier, with the effective gain of the circuit is given by $\sqrt{G}S_{23}$. The relationship between the input amplitudes $a$ and output amplitudes $b$ is given by the S parameter matrix:
-%
-%$$
-%S = \left(\begin{array}{ccc}
-%-1 + 2Q_L/Q_{00} & 2 Q_L/\sqrt{Q_{00}Q_{1}} & 2Q_L/\sqrt{Q_{00} Q_2} \\
-%2 Q_L/\sqrt{Q_{00}Q_{1}} & -1 + 2Q_L/Q_{1} & 2Q_L/\sqrt{Q_{1} Q_2} \\
-%2 Q_L/\sqrt{Q_{00}Q_{2}} & 2Q_L/\sqrt{Q_{1} Q_2} & -1 + 2Q_L/Q_{2} \\
-%\end{array}\right)
-%$$
-%
-%(NOTE: there is a typo in the afr_noise paper by Ishikawa and co. - their $S_{13}$ entry is wrong.)
-%
-%My understanding of the notation here is that $Q_{00}$ is the unloaded Q of the cavity, $Q_L$ is the loaded Q of the cavity, $Q_1$ and $Q_2$ are quality factors parameterizing the coupling ports, and $Q_0$ is the active Q (unloaded).
-%
-%TODO: is the S parameter matrix In the language of coupling coefficients, $\beta_1 = \sqrt{\frac{Q_{00}}{Q_1}}$ and $\beta_2 = \sqrt{\frac{Q_{00}}{Q_2}}$.
-%
-%The relationship between the active Q and the other quality factors is given by:
-%
-%\begin{align}
-%\frac{1}{Q_0} = \frac{1}{Q_L} - 2\sqrt{\frac{G}{Q_1 Q_2}}.
-%\end{align}
-%
-%Physically, the above equation tells us that a loaded cavity quality factor will be further modified by the introduction of gain, which will act as a negative resistance. When 
-%
-%$$
-%\sqrt{G} = \frac{\sqrt{Q_1 Q_2}}{2 Q_L}
-%$$
-%
-%then the active quality factor goes to infinity, and the circuit becomes an oscillator. The equation above is the same as the condition that $S_{23}\sqrt{G} = 1$.
-%
-%Now that we've established our notation, we want to know what the output power would look like. If we take the output from port 1 ($b_1$) as the voltage we will be listening to, then $b_1$ has the form:
-%
-%$$
-%b_1(t)= S_{21} n_0 + S_{22} n_b + S_{23} \sqrt{G} \big(b_1(t- t_0) + n_a \big)
-%$$
-%
-%Note that we $b_1$ is evaluated at two different times in this equation - once at the current time $t$ but also at $t-t_0$, where $t_0 = L/c$ is the time it takes for a wave at port 1 to traverse the circuit's length $L$.
-%
-%The time-averaged power we expect then is:
-%
-%$$
-%<|b_1(t)|^2> + |S_{23}|^2 G <|b_1(t-t_0)|^2> - 2 S_{23} \sqrt{G} < b_1^*(t)b_1(t-t_0)> = |S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a.
-%$$
-%
-%where we assumed that there is no correlation between the various noise sources, e.g. $<n_0 n_b> = 0$.
-%
-%Let us assume a steady state solution such that $<|b(t)|^2> = <|b(t-t_0)|^2>$. The autocorrelation of the two $b_1(t)$ terms is given by (NOTE: ask Gray again about how this was gotten):
-%
-%$$
-%<b_1^*(t)b_1(t-t_0)> = <|b_1(t)|^2> e^{-\omega t_0/Q}
-%$$
-%
-%I drop the subscript $1$ on $b(t)$ for simplicity and denote it by $b_{noise}$. We can rewrite the output power (CHECK: hopefully my transform to frequency space is not sketchy) as
-%
-%$$
-%<|b_{noise}(\omega)|^2> = \frac{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q}}.
-%$$
-%
-%Finally, we can parametrize any additional phase shift in the circuit by rewriting $\sqrt{G} \rightarrow \sqrt{G}e^{i\theta}$, so
-%
-%$$
-%<|b_{noise}(\omega)|^2> = \frac{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q - i\theta}}.
-%$$
-%
-%Note that we've derived the output noise power in the case of noise signal, but the output power when a signal is injected into the system (ie $a_0 = \sqrt{\beta_0} p$) would only be modified to be:
-%
-%$$
-%<|b_{signal}(\omega)|^2> =\frac{|S_{21}|^2 \beta_0 P}{1 + |S_{23}|^2 G - 2S_{23}\sqrt{G}e^{-\omega t_0/Q - i\theta}}
-%$$
-%
-%so the SNR would be:
-%
-%$$
-%SNR = \frac{<|b_{signal}(\omega)|^2>}{<|b_{noise}(\omega)|^2>} = \frac{|S_{21}|^2 \beta_0 P}{|S_{21}|^2 N_0 + |S_{22}|^2 N_b + |S_{23}|^2 G N_a}
-%$$
-%
-%... this doesn't make any sense. Not sure what I did wrong here.
-%
+%% The effective noise temperature of the cavity plus feedback loop is given by 
+
+%% \begin{equation}
+%% T_n = T_{cav} Q_e/Q_c (1+\beta_2 T_a/T_{cav}G^2Q_c/Q_0)
+%% \end{equation}
+                                
 %A different approach would be to recognize that the active Q ($Q_0$) gains by one factor of the multiplier:
 %
 %$$
@@ -319,8 +303,6 @@ SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \
 \label{fig:summary_plots}
 \end{figure}
 
-\subsection{Comparison with Simulation}
-
 \section{Discussion}
 Values of $M$ have been reported as high as $10^4$ yielding $Q$s of $7\times10^7$ in active feedback resonators~\cite{:/content/aip/journal/rsi/84/8/10.1063/1.4817537} used for other purposes, but that were operated at frequencies that could be relevant to dark matter axion searches.
 This would suggest existing experiments could increase their SNR by several orders of magnitude by implementing active feedback.
@@ -328,8 +310,6 @@ This would suggest existing experiments could increase their SNR by several orde
 The ADMX experiment is within an order of magnitude of the sensitivity necessary to be sensitive to pessimistically coupled axion dark matter.  The addition of active feedback, along with other planned upgrades, should allow it to to be sensitive to pessimistically coupled axion dark matter even in models where axions constitute a very small fraction of the dark matter.  The use of active feedback will also allow future experiments to operate at higher frequencies, where previous microwave cavity experiments have not had the sensitivity necessary to detect axion dark matter with a reasonable scan speed.
 
 This work was supported in part by the U.S. Department of Energy under contract DE-SC0009800.
-
-\section{Wild Speculation}
 
 \bibliography{2014_ouroboros}
 
