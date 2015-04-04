@@ -1,5 +1,4 @@
->\documentclass[aps,prl,twocolumn,groupedaddress]{revtex4-1}
-
+\documentclass[aps,prl,twocolumn,groupedaddress]{revtex4-1}
 %\documentclass[11pt]{amsart}
 %\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
 %\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
@@ -120,49 +119,51 @@ To calculate the effect of the active feedback, I will use the equivalent circui
 
 The cavity is fully characterized by the scattering matrix S and the noise amplitudes $c_1$ and $c_2$ radiated by the cavity into cold matched loads. Element $S_{21}$ is equal to the voltage amplification factor.
 
-Let us look at the amplitude of the wave at the output of port 2, assuming that all components are impedance matched and that isolators are placed at the ports to prevent reflected waves. If port 2 is critically coupled, then the noise wave at its output is equal to $c_2^2 =kT_{cav}B$, where B is the bandwidth of the detector.(G is the voltage gain of the amplifier and n_a the noise wave associated with it.)
+Let us look at the amplitude of the wave at the output of port 2, assuming that all components are impedance matched and that isolators are placed at the ports to prevent reflected waves. If port 2 is critically coupled, then the noise wave at its output is equal to $c_2^2 =kT_{cav}B$, where B is the bandwidth of the detector.(G is the voltage gain of the amplifier and $n_a$ the noise wave associated with it.) We can add the noise of the cavity and the amplifier to get the system noise wave, $n(t) = c_2(t)+n_a(t)$.
 
 The time averaged noise power of the output is then
 \begin{equation}
-P_n = <|(c_2(t) + n_a(t)) + (c_2(t-t_1)+n_a(t-t_1))GS_{21} + (c_2(t-2t_1)+n_a(t-2t_1))G^2S_{21}^2 + \ldots|^2>
+P_n = \langle |n(t) + n(t-t_1)GS_{21} + (c_2(t-2t_1)+n_a(t-2t_1))G^2S_{21}^2 + \ldots|^2 \rangle
 \end{equation}
 The amplifier noise $n_a$ and the thermal noise from the cavity $c_2$ are independent, hence $<c_2n_a> = 0$, and also in the steady state $<c_2(t)>^2 = \bar{c_2}$ is independent of time, so
 
 \begin{equation}
-P_n = (\bar{c_2}^2 + \bar{n_a}^2)\frac{1}{1 - G^2|S_{21}|^2} + \text{cross-terms} \\
+P_n = (\bar{c}_2^2 + \bar{n}_a^2)\frac{1}{1 - G^2|S_{21}|^2} + \text{cross-terms} \\
 \end{equation}
 where the cross-terms hold the information about the coherence of the noise between feedback rounds. Any signal entering the cavity undergoes exponential decay, so the expectation value of the cross terms goes as $<(c_2(t-nt_1)c_2(t-mt_1)> = \bar{c_2}^2e^(-(|n-m|)t_1/\tau)$, where $\tau = Q_L/\omega_0$ is the coherence time of the cavity. One can see that when the roundtrip time around the feedback loop is much larger than the coherence time, $t_1 \gg \tau$, the cross terms are exponentially suppressed and the feedback loop and amplifier enhance the original noise temperature of the cavity by a factor:
 \begin{equation}
-T_n = T_{cav}[1+\frac{T_a}{T_{cav}\frac{1}{1-G^2|S_{21}|^2}
+T_n = T_{sys}\frac{1}{1-G^2|S_{21}|^2}
 \end{equation}
 
 The analysis is slightly different for the signal power. We treat the axion-converted signal as a continuous source with amplitude $e_a$. Then the signal power observed at the output of port 2 (with the feedback loop is
 \begin{equation}
-P_s = <|e_a(t) + e_a(t-t_1)GS_{21} + e_a(t-2t_1)G^2S_{21}^2 + \ldots|^2>
+P_s = \langle |e_a(t) + e_a(t-t_1)GS_{21} + e_a(t-2t_1)G^2S_{21}^2 + \ldots|^2 \rangle
 \end{equation}
 
-and as long as \omega t_1 is a multiple of $2\pi$, $e_a(t-nt_1) = e_a(t)$.
+and as long as $\omega t_1$ is a multiple of $2\pi$, $e_a(t-nt_1) = e_a(t)$.
 
 Therefore the time averaged signal power is
 \begin{equation}
-P_s = \bar{e_a}^2\frac{1}{(1 - GS_{21})^2}
+P_s = \bar{e}_a^2\frac{1}{(1 - GS_{21})^2}
 \end{equation}
 
 This implies that the enhanced SNR from the feedback loop will be greater than the passive SNR, $SNR_0$, (assuming the same integration time and axion bandwidth) in the limit where the roundtrip time is much longer than the coherence time of the cavity, (need to add extra factor because axion signal will additionally be enhanced by Q).
 
-\begin{equation}
-SNR_{e}/SNR_{0} =P_{s, enhanced}/P_{s,original}\frac{(1-G^2|S_{21}|^2}{(1-GS_{21})^2} = 1/(1-GS_{21})(1 + \frac{2GS_{21}}{1-GS_{21}}
-\end{equation}
+\begin{align}
+\frac{SNR_{e}}{SNR_{0}} &=\frac{P_{s, enhanced}}{P_{s,original}}\frac{T_o}{T_e} = \frac{Q_e}{Q_o}\frac{1-G^2|S_{21}|^2}{(1-GS_{21})^2} 
+\\ &= \frac{1}{1-GS_{21}}\bigg(1 + \frac{2GS_{21}}{1-GS_{21}}\bigg)
+\end{align}
 In most cases we can achieve loaded Q's of only an order of magnitude below the axion linewidth, so we need a combined feedback of $GS_{21} = .8$ to improve the Q by an order of magnitude.
 
 When $t_1 \approx \tau$ we can no longer ignore the cross terms and end up with a noise power of
 
 \begin{equation}
-P_n = (\bar{c_2}^2 + \bar{n_a}^2)\frac{1}{1 - G^2|S_{21}|^2}\frac{1}{1-2e^{-t/\tau}GS_{21}}
+P_n = (\bar{c}_2^2 + \bar{n}_a^2)\frac{1}{1 - G^2|S_{21}|^2}\frac{1}{1-2e^{-t/\tau}GS_{21}}
 \end{equation}
 
 One subtlety is that if there is only phase shifter for multiple frequencies within the feedback loop, one will not be able to hold the requirement that $\omega t = 2\pi$ when the roundtrip travel time $t$ is long; that is to say, interference fringes will begin to be observed within the bandwidth of the cavity when tis of the order $t \approx \pi Q_e / \omega_0$, so in order to avoid this effect, one would want a delay which longer than the coherence time of the cavity, but not too long so as to avoid deconstructive interference among frequencies slightly off resonance. Another solution would be to multiplex the signal and give each frequency a slightly different phase shift so that all the frequencies in the cavity bandwidth receive a 2$\pi$ phase shift around the loop.
 
+The SNR will plateau once we can no longer assume that the signal persists indefinitely - that is to say, when we include the $Q$ of the signal in our description of the signal power, we get that the
 As well, the enhanced Q (again assuming a phase shift of $2\pi$), is given by \cite{ref:frenchpaper}
 \begin{equation}
 Q_e = Q_L\frac{1}{1-GS_{21}}
