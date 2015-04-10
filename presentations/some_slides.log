@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  8 APR 2015 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 APR 2015 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1004,20 +1004,20 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 (./some_slides.aux)
 \openout1 = `some_slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1083,7 +1083,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 58.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1093,9 +1093,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count172
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
 
 (./some_slides.out) (./some_slides.out)
 \@outlinefile=\write5
@@ -1126,94 +1126,244 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 47.
+LaTeX Info: Redefining \includegraphics on input line 58.
 
-(./some_slides.nav) <export_ouroboros.png, id=13, 719.68875pt x 461.725pt>
-File: export_ouroboros.png Graphic file (type png)
-
-<use export_ouroboros.png>
-Package pdftex.def Info: export_ouroboros.png used on input line 60.
-(pdftex.def)             Requested size: 307.28987pt x 197.14995pt.
-
+(./some_slides.nav)
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 60.
+(Font)              size <5> substituted on input line 62.
 
 [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./expor
-t_ouroboros.png>] <kunal_pic.pdf, id=44, 614.295pt x 794.97pt>
-File: kunal_pic.pdf Graphic file (type pdf)
-
-<use kunal_pic.pdf>
-Package pdftex.def Info: kunal_pic.pdf used on input line 64.
-(pdftex.def)             Requested size: 307.28987pt x 397.66599pt.
-
-Overfull \vbox (160.31778pt too high) detected at line 64
- []
-
-[2
-
- <./kunal_pic.pdf>]
-<experiment_schematic-eps-converted-to.pdf, id=82, 234.8775pt x 202.7575pt>
-File: experiment_schematic-eps-converted-to.pdf Graphic file (type pdf)
-
-<use experiment_schematic-eps-converted-to.pdf>
-Package pdftex.def Info: experiment_schematic-eps-converted-to.pdf used on inpu
-t line 78.
-(pdftex.def)             Requested size: 153.64493pt x 132.63232pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 85.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
+LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+) [2
 
- <./experiment_schematic-eps-converted-to.pdf>]
-<qmultiplier.png, id=116, 440.64626pt x 251.94125pt>
+]
+<export_sparams_10.png, id=77, 431.6125pt x 168.63pt>
+File: export_sparams_10.png Graphic file (type png)
+
+<use export_sparams_10.png>
+Package pdftex.def Info: export_sparams_10.png used on input line 90.
+(pdftex.def)             Requested size: 184.3758pt x 72.03346pt.
+ [3
+
+ <./export_sparams_10.png>]
+<export_sparams_4.png, id=103, 381.425pt x 243.91125pt>
+File: export_sparams_4.png Graphic file (type png)
+
+<use export_sparams_4.png>
+Package pdftex.def Info: export_sparams_4.png used on input line 95.
+(pdftex.def)             Requested size: 199.73653pt x 127.72408pt.
+ [4
+
+ <./export_sparams_4.png>]
+<export_sparams_7.png, id=129, 381.425pt x 339.2675pt>
+File: export_sparams_7.png Graphic file (type png)
+
+<use export_sparams_7.png>
+Package pdftex.def Info: export_sparams_7.png used on input line 100.
+(pdftex.def)             Requested size: 199.73653pt x 177.65736pt.
+ [5
+
+ <./export_sparams_7.png>]
+<export_sparams_8.png, id=156, 486.81876pt x 477.785pt>
+File: export_sparams_8.png Graphic file (type png)
+
+<use export_sparams_8.png>
+Package pdftex.def Info: export_sparams_8.png used on input line 105.
+(pdftex.def)             Requested size: 199.73653pt x 196.03163pt.
+ [6
+
+ <./export_sparams_8.png>]
+<export_sparams_9.png, id=182, 510.90875pt x 529.98pt>
+File: export_sparams_9.png Graphic file (type png)
+
+<use export_sparams_9.png>
+Package pdftex.def Info: export_sparams_9.png used on input line 110.
+(pdftex.def)             Requested size: 199.73653pt x 207.19273pt.
+ [7
+
+ <./export_sparams_9.png>]
+<export_sparams_13.png, id=209, 611.28375pt x 529.98pt>
+File: export_sparams_13.png Graphic file (type png)
+
+<use export_sparams_13.png>
+Package pdftex.def Info: export_sparams_13.png used on input line 116.
+(pdftex.def)             Requested size: 199.73653pt x 173.16335pt.
+ [8
+
+ <./export_sparams_13.png>]
+<export_sparams_14.png, id=235, 651.43375pt x 529.98pt>
+File: export_sparams_14.png Graphic file (type png)
+
+<use export_sparams_14.png>
+Package pdftex.def Info: export_sparams_14.png used on input line 121.
+(pdftex.def)             Requested size: 199.73653pt x 162.49681pt.
+ [9
+
+ <./export_sparams_14.png>] [10
+
+]
+<export_sparams_12.png, id=287, 611.28375pt x 529.98pt>
+File: export_sparams_12.png Graphic file (type png)
+
+<use export_sparams_12.png>
+Package pdftex.def Info: export_sparams_12.png used on input line 140.
+(pdftex.def)             Requested size: 184.3758pt x 159.85242pt.
+ [11
+
+ <./export_sparams_12.png>]
+<export_ouroboros.png, id=313, 719.68875pt x 461.725pt>
+File: export_ouroboros.png Graphic file (type png)
+
+<use export_ouroboros.png>
+Package pdftex.def Info: export_ouroboros.png used on input line 154.
+(pdftex.def)             Requested size: 307.28987pt x 197.14995pt.
+ [12
+
+ <./export_ouroboros.png>] [13
+
+]
+<lisa_pic.jpg, id=367, 401.5pt x 301.125pt>
+File: lisa_pic.jpg Graphic file (type jpg)
+ <use lisa_pic.jpg>
+Package pdftex.def Info: lisa_pic.jpg used on input line 175.
+(pdftex.def)             Requested size: 122.9164pt x 92.18529pt.
+
+<kunal_pic.pdf, id=368, 614.295pt x 794.97pt>
+File: kunal_pic.pdf Graphic file (type pdf)
+ <use kunal_pic.pdf>
+Package pdftex.def Info: kunal_pic.pdf used on input line 175.
+(pdftex.def)             Requested size: 153.64493pt x 198.82692pt.
+
+Overfull \hbox (122.9164pt too wide) in paragraph at lines 175--175
+[][][]  
+ []
+
+<gray_pic.pdf, id=369, 614.295pt x 794.97pt>
+File: gray_pic.pdf Graphic file (type pdf)
+ <use gray_pic.pdf>
+Package pdftex.def Info: gray_pic.pdf used on input line 175.
+(pdftex.def)             Requested size: 153.64493pt x 198.82692pt.
+ [14
+
+ <./lisa_pic.jpg> <./kunal_pic.pdf> <./gray_pic.pdf>]
+<first_limit.pdf, id=421, 276.88184pt x 181.23067pt>
+File: first_limit.pdf Graphic file (type pdf)
+ <use first_limit.pdf>
+Package pdftex.def Info: first_limit.pdf used on input line 181.
+(pdftex.def)             Requested size: 307.28987pt x 201.13799pt.
+
+[15
+
+ <./first_limit.pdf>] <second_limit.pdf, id=472, 276.88184pt x 181.23067pt>
+File: second_limit.pdf Graphic file (type pdf)
+
+<use second_limit.pdf>
+Package pdftex.def Info: second_limit.pdf used on input line 186.
+(pdftex.def)             Requested size: 307.28987pt x 201.13799pt.
+ [16
+
+ <./second_limit.pdf>]
+<third_limit.pdf, id=512, 276.88184pt x 181.23067pt>
+File: third_limit.pdf Graphic file (type pdf)
+ <use third_limit.pdf>
+Package pdftex.def Info: third_limit.pdf used on input line 191.
+(pdftex.def)             Requested size: 307.28987pt x 201.13799pt.
+
+[17
+
+ <./third_limit.pdf>]
+<exploring_second_limit_low.pdf, id=549, 276.88184pt x 181.23067pt>
+File: exploring_second_limit_low.pdf Graphic file (type pdf)
+
+<use exploring_second_limit_low.pdf>
+Package pdftex.def Info: exploring_second_limit_low.pdf used on input line 196.
+
+(pdftex.def)             Requested size: 307.28987pt x 201.13799pt.
+ [18
+
+ <./exploring_second_limit_low.pdf>]
+<exploring_second_limit_high.pdf, id=593, 276.88184pt x 181.23067pt>
+File: exploring_second_limit_high.pdf Graphic file (type pdf)
+
+<use exploring_second_limit_high.pdf>
+Package pdftex.def Info: exploring_second_limit_high.pdf used on input line 201
+.
+(pdftex.def)             Requested size: 307.28987pt x 201.13799pt.
+ [19
+
+ <./exploring_second_limit_high.pdf>]
+<comparison_xaxis_gain.pdf, id=633, 266.14572pt x 175.09064pt>
+File: comparison_xaxis_gain.pdf Graphic file (type pdf)
+
+<use comparison_xaxis_gain.pdf>
+Package pdftex.def Info: comparison_xaxis_gain.pdf used on input line 206.
+(pdftex.def)             Requested size: 307.28987pt x 202.17285pt.
+ [20
+
+ <./comparison_xaxis_gain.pdf>]
+<experiment_schematic-eps-converted-to.pdf, id=665, 234.8775pt x 202.7575pt>
+File: experiment_schematic-eps-converted-to.pdf Graphic file (type pdf)
+
+<use experiment_schematic-eps-converted-to.pdf>
+Package pdftex.def Info: experiment_schematic-eps-converted-to.pdf used on inpu
+t line 221.
+(pdftex.def)             Requested size: 153.64493pt x 132.63232pt.
+ [21
+
+ <./experiment_schematic-eps-converted-to.pdf>] <qmultiplier.png, id=696, 440.6
+4626pt x 251.94125pt>
 File: qmultiplier.png Graphic file (type png)
- <use qmultiplier.png>
-Package pdftex.def Info: qmultiplier.png used on input line 101.
-(pdftex.def)             Requested size: 153.64493pt x 87.8463pt.
 
-[4
+<use qmultiplier.png>
+Package pdftex.def Info: qmultiplier.png used on input line 244.
+(pdftex.def)             Requested size: 153.64493pt x 87.8463pt.
+ [22
 
  <./qmultiplier.png>]
-<active_resonator_setup_photo.png, id=150, 534.99875pt x 698.61pt>
+<active_resonator_setup_photo.png, id=725, 534.99875pt x 698.61pt>
 File: active_resonator_setup_photo.png Graphic file (type png)
 
 <use active_resonator_setup_photo.png>
-Package pdftex.def Info: active_resonator_setup_photo.png used on input line 11
-3.
+Package pdftex.def Info: active_resonator_setup_photo.png used on input line 25
+6.
 (pdftex.def)             Requested size: 153.64493pt x 200.63028pt.
 
-<s21_no_delay.png, id=151, 708.6475pt x 538.01pt>
+<s21_no_delay.png, id=726, 708.6475pt x 538.01pt>
 File: s21_no_delay.png Graphic file (type png)
  <use s21_no_delay.png>
-Package pdftex.def Info: s21_no_delay.png used on input line 113.
+Package pdftex.def Info: s21_no_delay.png used on input line 256.
 (pdftex.def)             Requested size: 153.64493pt x 116.6468pt.
 
-<s21_delay.png, id=152, 687.56876pt x 493.845pt>
+<s21_delay.png, id=727, 687.56876pt x 493.845pt>
 File: s21_delay.png Graphic file (type png)
  <use s21_delay.png>
-Package pdftex.def Info: s21_delay.png used on input line 113.
+Package pdftex.def Info: s21_delay.png used on input line 256.
 (pdftex.def)             Requested size: 153.64493pt x 110.34924pt.
- [5
+ [23
 
  <./active_resonator_setup_photo.png> <./s21_no_delay.png> <./s21_delay.png>]
-<summary_plots.png, id=180, 1011.78pt x 542.025pt>
+<summary_plots.png, id=756, 1011.78pt x 542.025pt>
 File: summary_plots.png Graphic file (type png)
  <use summary_plots.png>
-Package pdftex.def Info: summary_plots.png used on input line 117.
+Package pdftex.def Info: summary_plots.png used on input line 260.
 (pdftex.def)             Requested size: 307.28987pt x 164.61852pt.
 
-[6
+[24
 
- <./summary_plots.png>]
+ <./summary_plots.png>] [25
+
+]
 \tf@nav=\write6
 \openout6 = `some_slides.nav'.
 
@@ -1223,11 +1373,11 @@ Package pdftex.def Info: summary_plots.png used on input line 117.
 \tf@snm=\write8
 \openout8 = `some_slides.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./some_slides.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `some_slides.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1235,32 +1385,41 @@ Package rerunfilecheck Info: File `some_slides.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 17504 strings out of 493117
- 328392 string characters out of 6135433
- 410286 words of memory out of 5000000
- 20510 multiletter control sequences out of 15000+600000
+ 17724 strings out of 493117
+ 332400 string characters out of 6135433
+ 411556 words of memory out of 5000000
+ 20675 multiletter control sequences out of 15000+600000
  14609 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,411b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,55p,411b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on some_slides.pdf (6 pages, 6498453 bytes).
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on some_slides.pdf (25 pages, 7227434 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 13 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 780 compressed objects within 8 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
