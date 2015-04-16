@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  4 FEB 2015 12:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  12 APR 2015 03:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -942,20 +942,20 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 (./some_slides.aux)
 \openout1 = `some_slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 (/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1011,7 +1011,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 58.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -1020,8 +1020,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
 
 (./some_slides.out) (./some_slides.out)
 \@outlinefile=\write4
@@ -1032,54 +1032,160 @@ LaTeX Info: Redefining \pageref on input line 47.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file some_slides.nav.
-<experiment_schematic-eps-converted-to.pdf, id=10, 234.8775pt x 202.7575pt>
-File: experiment_schematic-eps-converted-to.pdf Graphic file (type pdf)
+) (./some_slides.nav)
 
-<use experiment_schematic-eps-converted-to.pdf>
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 62.
+
+[1
+
+{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 85.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 85.
 
 (/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
+) [2
 
-LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 60.
+]
+<cavity_linear_to_nonlinear.png, id=74, 777.90625pt x 233.87375pt>
+File: cavity_linear_to_nonlinear.png Graphic file (type png)
 
-[1
+<use cavity_linear_to_nonlinear.png> [3
 
-{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./exper
-iment_schematic-eps-converted-to.pdf>]
-<qmultiplier.png, id=47, 440.64626pt x 251.94125pt>
-File: qmultiplier.png Graphic file (type png)
- <use qmultiplier.png>
-[2
+ <./cavity_linear_to_nonlinear.png (PNG copy)>] <arxiv_snapshot.png, id=100, 97
+2.63374pt x 363.3575pt>
+File: arxiv_snapshot.png Graphic file (type png)
 
- <./qmultiplier.png>]
-<active_resonator_setup_photo.png, id=81, 534.99875pt x 698.61pt>
-File: active_resonator_setup_photo.png Graphic file (type png)
+<use arxiv_snapshot.png> <gray_headshot.png, id=102, 133.4586pt x 100.6962pt>
+File: gray_headshot.png Graphic file (type png)
 
-<use active_resonator_setup_photo.png>
-<s21_no_delay.png, id=82, 708.6475pt x 538.01pt>
-File: s21_no_delay.png Graphic file (type png)
- <use s21_no_delay.png>
-<s21_delay.png, id=83, 687.56876pt x 493.845pt>
+<use gray_headshot.png>
+<experiment_schematic-eps-converted-to.pdf, id=103, 234.8775pt x 202.7575pt>
+File: experiment_schematic-eps-converted-to.pdf Graphic file (type pdf)
+
+<use experiment_schematic-eps-converted-to.pdf> [4
+
+ <./arxiv_snapshot.png> <./gray_headshot.png (PNG copy)> <./experiment_schemati
+c-eps-converted-to.pdf>]
+<nonlinear_scaling.png, id=137, 406.51875pt x 329.23pt>
+File: nonlinear_scaling.png Graphic file (type png)
+
+<use nonlinear_scaling.png> [5
+
+ <./nonlinear_scaling.png (PNG copy)>] [6
+
+]
+<delay.png, id=194, 466.74374pt x 329.23pt>
+File: delay.png Graphic file (type png)
+ <use delay.png> [7
+
+ <./delay.png (PNG copy)>] <delay_no_delay.pdf, id=222, 276.88184pt x 181.23067
+pt>
+File: delay_no_delay.pdf Graphic file (type pdf)
+
+<use delay_no_delay.pdf> [8
+
+ <./delay_no_delay.pdf>]
+<looking_at_coth.pdf, id=273, 276.88184pt x 181.23067pt>
+File: looking_at_coth.pdf Graphic file (type pdf)
+
+<use looking_at_coth.pdf> [9
+
+ <./looking_at_coth.pdf>]
+<first_circuit_no_delay.png, id=312, 3276.24pt x 2457.18pt>
+File: first_circuit_no_delay.png Graphic file (type png)
+
+<use first_circuit_no_delay.png>
+Overfull \vbox (5.08684pt too high) detected at line 204
+ []
+
+[10
+
+ <./first_circuit_no_delay.png (PNG copy)>]
+<low_q.png, id=338, 358.33875pt x 263.98625pt>
+File: low_q.png Graphic file (type png)
+ <use low_q.png>
+<high_q.png, id=339, 358.33875pt x 261.97874pt>
+File: high_q.png Graphic file (type png)
+ <use high_q.png> [11
+
+ <./low_q.png> <./high_q.png>] <first_circuit_version.png, id=367, 3276.24pt x 
+2457.18pt>
+File: first_circuit_version.png Graphic file (type png)
+
+<use first_circuit_version.png> [12
+
+ <./first_circuit_version.png (PNG copy)>]
+<no_isolator.png, id=393, 719.68875pt x 461.725pt>
+File: no_isolator.png Graphic file (type png)
+ <use no_isolator.png>
+[13
+
+ <./no_isolator.png (PNG copy)>] [14
+
+]
+<experiment.pdf, id=445, 284.77763pt x 181.11954pt>
+File: experiment.pdf Graphic file (type pdf)
+ <use experiment.pdf>
+[15
+
+ <./experiment.pdf>] [16
+
+] [17
+
+] <lisa_pic.jpg, id=530, 401.5pt x 301.125pt>
+File: lisa_pic.jpg Graphic file (type jpg)
+
+<use lisa_pic.jpg> <kunal_pic.pdf, id=531, 614.295pt x 794.97pt>
+File: kunal_pic.pdf Graphic file (type pdf)
+
+<use kunal_pic.pdf>
+Overfull \hbox (122.9164pt too wide) in paragraph at lines 379--379
+[][][]  
+ []
+
+<gray_pic.pdf, id=532, 614.295pt x 794.97pt>
+File: gray_pic.pdf Graphic file (type pdf)
+ <use gray_pic.pdf> [18
+
+ <./lisa_pic.jpg> <./kunal_pic.pdf> <./gray_pic.pdf>] [19
+
+]
+<axion_bw.png, id=610, 300.12125pt x 243.91125pt>
+File: axion_bw.png Graphic file (type png)
+ <use axion_bw.png> [20
+
+ <./axion_bw.png>] <saw.png, id=638, 470.75874pt x 217.81375pt>
+File: saw.png Graphic file (type png)
+ <use saw.png> [21
+
+ <./saw.png>]
+Overfull \hbox (4.67352pt too wide) in paragraph at lines 422--422
+[]  
+ []
+
+[22
+
+] <comparison_xaxis_gain.pdf, id=690, 266.14572pt x 175.09064pt>
+File: comparison_xaxis_gain.pdf Graphic file (type pdf)
+
+<use comparison_xaxis_gain.pdf> [23
+
+ <./comparison_xaxis_gain.pdf>]
+<s21_delay.png, id=720, 687.56876pt x 493.845pt>
 File: s21_delay.png Graphic file (type png)
- <use s21_delay.png> [3
+ <use s21_delay.png>
+Overfull \vbox (26.28647pt too high) detected at line 431
+ []
 
- <./active_resonator_setup_photo.png> <./s21_no_delay.png> <./s21_delay.png>]
-<summary_plots.png, id=112, 1011.78pt x 542.025pt>
-File: summary_plots.png Graphic file (type png)
- <use summary_plots.png>
-[4
+[24
 
- <./summary_plots.png>]
+ <./s21_delay.png>]
 \tf@nav=\write5
 \openout5 = `some_slides.nav'.
 
@@ -1096,28 +1202,41 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 13397 strings out of 493848
- 234541 string characters out of 3149207
- 319442 words of memory out of 3000000
- 16282 multiletter control sequences out of 15000+200000
- 14609 words of font info for 43 fonts, out of 3000000 for 9000
+ 13675 strings out of 493848
+ 239073 string characters out of 3149207
+ 323679 words of memory out of 3000000
+ 16496 multiletter control sequences out of 15000+200000
+ 18753 words of font info for 60 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 45i,14n,53p,339b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,16n,53p,339b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2009/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2009/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
-cal/texlive/2009/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loca
-l/texlive/2009/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/
-texlive/2009/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on some_slides.pdf (4 pages, 2746733 bytes).
+usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+09/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2009/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2009/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2009/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2009/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2009/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2009/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2009/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2009/texmf-di
+st/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2009/texmf-dist
+/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2009/texmf-dist/f
+onts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2009/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2009/texmf-dist/fonts
+/type1/public/cm-super/sfrm1440.pfb>
+Output written on some_slides.pdf (24 pages, 27012637 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 825 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
