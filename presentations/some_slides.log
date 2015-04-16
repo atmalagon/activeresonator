@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  16 APR 2015 14:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  16 APR 2015 14:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1145,7 +1145,7 @@ File: lisa_pic.jpg Graphic file (type jpg)
 File: kunal_pic.pdf Graphic file (type pdf)
 
 <use kunal_pic.pdf>
-Overfull \hbox (122.9164pt too wide) in paragraph at lines 379--379
+Overfull \hbox (122.9164pt too wide) in paragraph at lines 380--380
 [][][]  
  []
 
@@ -1165,7 +1165,7 @@ File: saw.png Graphic file (type png)
  <use saw.png> [21
 
  <./saw.png>]
-Overfull \hbox (4.67352pt too wide) in paragraph at lines 422--422
+Overfull \hbox (4.67352pt too wide) in paragraph at lines 423--423
 []  
  []
 
@@ -1180,7 +1180,7 @@ File: comparison_xaxis_gain.pdf Graphic file (type pdf)
 <s21_delay.png, id=720, 687.56876pt x 493.845pt>
 File: s21_delay.png Graphic file (type png)
  <use s21_delay.png>
-Overfull \vbox (26.28647pt too high) detected at line 431
+Overfull \vbox (26.28647pt too high) detected at line 432
  []
 
 [24
@@ -1234,7 +1234,7 @@ st/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2009/texmf-dist
 onts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2009/texmf-dist/fon
 ts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2009/texmf-dist/fonts
 /type1/public/cm-super/sfrm1440.pfb>
-Output written on some_slides.pdf (24 pages, 27012640 bytes).
+Output written on some_slides.pdf (24 pages, 27013838 bytes).
 PDF statistics:
  825 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
