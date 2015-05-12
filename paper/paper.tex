@@ -115,11 +115,11 @@ A schematic of a microwave cavity axion experiment with active feedback is shown
 %We represent the cavity as an RLC circuit, with impedance transformers representing the coupling ports from the cavity to the external system.
 %An amplifier with voltage gain $\sqrt{G_a}$ and equivalent noise temperature $T_a$ is placed in the feedback loop along with a phase shifter.
 %The closed loop gain of the system, assuming no loss in the phase shifter, is then $\sqrt{G_l} = S_{12}\sqrt{G}$. When 
-To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  These external quality factors can be defined in terms of the unloaded Q and the coupling coefficients $\beta_1$ and $\beta_2$, which represent respectively the fraction of power lost out of port 1 or port 2 compared to the power lost to the walls: $Q_{e1} = Q_0/\beta_1$ and $Q_{e2} = Q_0/\beta_2$. $G$ is the combined gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
+To calculate the effect of the active feedback, I will use the equivalent circuit to the cavity-amplifier system shown in Fig.~\ref{fig:equiv_circuit}.  The cavity resonant mode is equivalent to an $LRC$ circuit with an unloaded $Q$ of $Q_0$ and the coupled antennas are equivalent to transformers with couplings $Q_{e1}$ and $Q_{e2}~$\cite{Montgomery:1948}.  These external quality factors can be defined in terms of the unloaded Q and the coupling coefficients $\beta_1$ and $\beta_2$, which represent respectively the fraction of power lost out of port 1 or port 2 compared to the power lost to the walls: $$\beta_1 = \frac{Q_{e1} }{Q_0}$$ and $$\beta_2 = \frac{Q_{e2}}{Q_0}.$$ $G$ is the combined voltage gain of the amplifier and power divider.  There is also a phase shift between the two antennas around the loop, which will be denoted as $\delta$.  The coupling between the electromagnetic resonance in the cavity and dark matter axions is equivalent to a third antenna with coupling $Q_{e3}$.  The passive loaded $Q$ of the resonator is $Q_L=\left(Q_0^{-1}+Q_{e1}^{-1}+Q_{e2}^{-1}+Q_{e3}^{-1}\right)^{-1}$.
 
-The cavity is fully characterized by the scattering matrix S and the noise amplitudes $c_1$ and $c_2$ radiated by the cavity into cold matched loads. Element $S_{21}$ is equal to the voltage amplification factor.
+%The cavity is fully characterized by the scattering matrix S and the noise amplitudes $c_1$ and $c_2$ radiated by the cavity into cold matched loads. Element $S_{21}$ is equal to the voltage amplification factor.
 
-Let us look at the amplitude of the wave at the output of port 2, assuming that all components are impedance matched and that isolators are placed at the ports to prevent reflected waves. If port 2 is critically coupled, then the noise wave at its output is equal to $c_2^2 =kT_{cav}B$, where B is the bandwidth of the detector.(G is the voltage gain of the amplifier and $n_a$ the noise wave associated with it.) We can add the noise of the cavity and the amplifier to get the system noise wave, $n(t) = c_2(t)+n_a(t)$.
+Let us look at the amplitude of the wave at the output of port 2, assuming that all components are impedance matched and that isolators are placed at the ports to prevent reflected waves. If port 2 is critically coupled, then the noise wave at its output is equal to $|c_2|^2 =kT_{cav}B$, where B is the bandwidth of the detector. We can add the noise of the cavity and the amplifier to get the system noise wave, $n(t) = c_2(t)+n_a(t)$.
 
 The time averaged noise power of the output is then
 \begin{equation}
@@ -163,18 +163,18 @@ P_n = (\bar{c}_2^2 + \bar{n}_a^2)\frac{1}{1 - G^2|S_{21}|^2}\frac{1}{1-2e^{-t/\t
 
 One subtlety is that if there is only phase shifter for multiple frequencies within the feedback loop, one will not be able to hold the requirement that $\omega t = 2\pi$ when the roundtrip travel time $t$ is long; that is to say, interference fringes will begin to be observed within the bandwidth of the cavity when tis of the order $t \approx \pi Q_e / \omega_0$, so in order to avoid this effect, one would want a delay which longer than the coherence time of the cavity, but not too long so as to avoid deconstructive interference among frequencies slightly off resonance. Another solution would be to multiplex the signal and give each frequency a slightly different phase shift so that all the frequencies in the cavity bandwidth receive a 2$\pi$ phase shift around the loop.
 
-The SNR will plateau once we can no longer assume that the signal persists indefinitely - that is to say, when we include the $Q$ of the signal in our description of the signal power, we get that the
-As well, the enhanced Q (again assuming a phase shift of $2\pi$), is given by \cite{ref:frenchpaper}
-\begin{equation}
-Q_e = Q_L\frac{1}{1-GS_{21}}
-\end{equation}
-you can see this by noting that the Q is a measure of how much a signal builds up; since the signal builds up by 
-$Q_{unloaded} = \omega U / P_{walls}$.
-Similarly
-$Q_{e1} = \omega U / P_{port1}$ and $Q_{e2} = \omega U / P_{port2}$.
-Therefore the loaded passive Q is $Q_L^{-1} = P_{total lost}/\omega U =  = Q_{e1}^{-1} + Q_{e2}^{-2} + Q_{unloaded}^{-1}$.
-Then with the feedback loop some power is regained, so 
-$Q_e^{-1} = 1/\omega U (P_{port1} + P_{port2} + P_{walls} - P_{feedback}) = Q_L$
+%The SNR will plateau once we can no longer assume that the signal persists indefinitely - that is to say, when we include the $Q$ of the signal in our description of the signal power, we get that the
+%As well, the enhanced Q (again assuming a phase shift of $2\pi$), is given by \cite{ref:frenchpaper}
+%\begin{equation}
+%Q_e = Q_L\frac{1}{1-GS_{21}}
+%\end{equation}
+%you can see this by noting that the Q is a measure of how much a signal builds up; since the signal builds up by 
+%$Q_{unloaded} = \omega U / P_{walls}$.
+%Similarly
+%$Q_{e1} = \omega U / P_{port1}$ and $Q_{e2} = \omega U / P_{port2}$.
+%Therefore the loaded passive Q is $Q_L^{-1} = P_{total lost}/\omega U =  = Q_{e1}^{-1} + Q_{e2}^{-2} + Q_{unloaded}^{-1}$.
+%Then with the feedback loop some power is regained, so 
+%$Q_e^{-1} = 1/\omega U (P_{port1} + P_{port2} + P_{walls} - P_{feedback}) = Q_L$
 %% I can now treat the cavity as a three port device using amplitudes defined in Fig.~\ref{fig:amplitude_defs} with an $S$ matrix of
 %% \begin{equation}
 %% S = \left( \begin{array}{ccc}
@@ -285,8 +285,21 @@ though it could be larger in models where the axion dark matter is unusually col
 %
 %In any case, for typical experimental parameters, we can plot the noise vs Q for different delay times, which correspond to our measurement configurations with and without the delay line in. See below.
 
+\section{Thermal Noise Analysis}
+
+\begin{figure}[htbp]
+\includegraphics[width=.5\textwidth]{figs/looking_at_coth}
+\caption{Theoretical noise analysis}
+\label{fig:analysis}
+\end{figure}
 \section{Experimental Study}
-In order to experimentally confirm the results of the analysis presented above, a microwave cavity with feedback loop was built and tested, as illustrated in Figure x. The enhanced cavity Q was varied by varying the attenuation in the loop and the output spectrum measured on a spectrum analyzer. A test tone was injected into a third port to measure the signal to noise ratio for various values of the enhanced Q. The phase was adjusted to provide maximum power output.
+
+\begin{figure}[htbp]
+\includegraphics[width=.5\textwidth]{figs/no_isolator}
+\caption{Schematic of experimental setup}
+\label{fig:schematic_of_prototype}
+\end{figure}
+In order to experimentally confirm the results of the analysis presented above, a microwave cavity with feedback loop was built and tested, as illustrated in Figure x. The enhanced cavity Q was varied by varying the attenuation in the loop and the output spectrum measured on a spectrum analyzer. A test tone was injected into a third port to measure the signal to noise ratio for various values of the enhanced Q. The phase was adjusted to provide maximum power output.\\
 
 \begin{tabular}{|c|c|}
 \hline
@@ -301,15 +314,27 @@ $T_{amp}$ & 300 K \\
 $G_a$ & ? dB \\
 Averaging Time & (what is 25 avgs in secs?) \\
 Time Delay & 2.4 $\mu$s \\
-Bandwidth & ? wrote it down on a napkin somewhere? \\
+Bandwidth & ? wrote it down on a napkin? \\
 \hline
-\end{tabular}
+\end{tabular}\\
 
 As we injected a constant test tone and don't have a signal which scales with the enhanced Q, we expect only to observe an improvement in SNR of a factor of M.
 The experiment was made with and without a delay line whose delay of $2.4\mu$seconds was a factor of 100 greater than the coherence time of the cavity. The improvement in SNR vs. enhanced Q is shown in Figure xx, for the delay line in and for no delay line. The improvement scales as expected for both cases.
+
 \begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figs/summary_plots}
+\includegraphics[width=.5\textwidth]{figs/measurement_6}
+\caption{No delay line}
+\label{fig:measurement_6}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=.5\textwidth]{figs/measurement_7}
+\caption{Delay line}
+\label{fig:measurement_7}
+\end{figure}
+
+\begin{figure}[htbp]
+\includegraphics[width=.5\textwidth]{figs/experiment}
 \caption{}
 \label{fig:summary_plots}
 \end{figure}
