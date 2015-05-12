@@ -63,17 +63,18 @@ but as of yet, axions have not been detected in a microwave cavity experiment~\c
 
 The signal power in microwave cavity experiments is proportional to a number of factors, including the local density of dark matter, the strength of the magnetic field, the volume of the cavity, and the resonant 
 %loaded
-quality factor $Q$ of the resonance being used:
+quality factor $Q$ of the resonance being used \cite{TODOCITEEQN}:
 %give equation
 \begin{align}
 P_{sig} = \eta g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{min}(Q_{loaded},Q_a)
 \end{align}
+where $\eta$ is the coupling between the cavity and output, $g_{a\gamma\gamma}$ is the axion-photon coupling, $B$ is the applied magnetic field, $V$ is the colume of the cavity, $C$ is the "form factor", or overlap between the cavity resonant mode and the axion field, $\rho_a$ is the local density of dark matter axions, $m_a$ is the axion mass, $Q_{loaded}$ is the loaded Q of the cavity resonant mode, $Q_a$ is the thermal width of the axion signal, taken to be $10^6$ or higher.
 The primary background is the thermal noise from the physical temperature of the cavity and the electronic noise from the first stage amplifier.  
 The figure of merit for a microwave cavity experiment is the instantaneous axion signal to noise ratio (SNR).
 %why emphasize instanteneous?
 The SNR is given by the ratio of the signal power to the fluctuations in the noise power. We assume that we measure the signal for time $\tau$ with a frequency resolution equal to the width of the axion signal, $B_a$:
 \begin{align}
-SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}B_a}\sqrt{B_a \tau}
+SNR = \frac{P_{sig}}{\delta P_{noise}} = \frac{P_{sig}}{T_{noise}}\sqrt{B_a \tau}
 \end{align}
 
 Experiments with a larger SNR can be sensitive to more pessimistic axion photon couplings for a given frequency tuning speed or tune more quickly for a given axion photon coupling sensitivity.
@@ -81,12 +82,12 @@ Experiments with a larger SNR can be sensitive to more pessimistic axion photon 
 Increasing the cavity $Q$ is one way to increase SNR in a microwave cavity experiment; the speed at which the cavity frequency can be tuned while remaining sensitive to a given axion photon coupling is linearly proportional to $Q$~\cite{Peng2000569}.
 The presence of a strong magnetic field precludes the use of high-$Q$ superconducting cavities in these experiments, so the cavities are usually made of or coated with copper.
 %add, ``...although R&D is being done with superconducting thing films on the walls...''
-Loaded $Q$s of $10^5$ at 1 GHz have been achieved with copper cavities in axion experiments~\cite{Peng2000569}.  Higher frequency cavities typically have smaller $Q$s.
+Loaded $Q$s of $10^5$ at 1 GHz have been achieved with copper cavities in axion experiments~\cite{Peng2000569}.  The Q of a cavity scales as $Q \propto f^{-2/3}$ due to skin depth effects \cite{TODOCITETHIS}, so that higher frequency cavities typically have smaller $Q$s.  This has the effect of making higher mass axions more challenging to search for.
 %mention anomalous skin depth limit, or scaling of Q with frequency as f^-2/3?
 %The quality factor for a passive resonator depends solely on the frequency, geometry, and material of the resonator.
-For a cylindrical copper cavity the Q scales as $Q \propto f^{-2/3}$....skin depth.
+%For a cylindrical copper cavity the Q scales as $Q \propto f^{-2/3}$....skin depth.
 
-I present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
+We present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
 
 \section{Theory of Method}
 
@@ -299,7 +300,24 @@ though it could be larger in models where the axion dark matter is unusually col
 \caption{Schematic of experimental setup}
 \label{fig:schematic_of_prototype}
 \end{figure}
-In order to experimentally confirm the results of the analysis presented above, a microwave cavity with feedback loop was built and tested, as illustrated in Figure x. The enhanced cavity Q was varied by varying the attenuation in the loop and the output spectrum measured on a spectrum analyzer. A test tone was injected into a third port to measure the signal to noise ratio for various values of the enhanced Q. The phase was adjusted to provide maximum power output.\\
+
+Here we experimentally confirm the results of the analysis presented above.
+A microwave cavity with a feedback loop was built as in Fig.~\ref{FIG:??}.
+The axion signal was simulated with a standard signal generator fed into a weakly coupled port in the cavity.
+The active Q of the system could be changed by modifying the phase and attenuation of the system.
+A network analyzer attached ******* was used to measure the active Q of the system.
+A specturm analyzer measured a fraction of the power in the feedback loop to measure signal and noise power. 
+The relevant parameters of the setup are summarized in Table~\ref{TAB:PARAMS}.
+
+The signal to noise enhancement was measured as a function of active Q for three different delays in the feedback loop.
+First, the loop gain of the system was set by adjustion the variable attenuator.  
+***ANA MAKE SURE THIS IS THE RIGHT PROCEDURE***
+Then the phase shifter was adjusted to maximize the Q measured in the network analyzer.
+This Q was recorded as the active Q.
+With the signal generator off, the power at the center of the Q was measured with the spectrum analyzer.
+This was recorded as the noise power.
+The signal generator was then turned on, the frequency tuned to correspond to the center of the resonance, and the power was measured and recorded as the signal power. 
+The variable attenuation was then decreased slightly and the procedure was repeated for the new, higher, active Q until the loop gain was high enough that the system became unstable and began to oscillate. 
 
 \begin{tabular}{|c|c|}
 \hline
@@ -316,10 +334,16 @@ Averaging Time & (what is 25 avgs in secs?) \\
 Time Delay & 2.4 $\mu$s \\
 Bandwidth & ? wrote it down on a napkin? \\
 \hline
+\label{TAB:PARAMS}
 \end{tabular}\\
 
-As we injected a constant test tone and don't have a signal which scales with the enhanced Q, we expect only to observe an improvement in SNR of a factor of M.
-The experiment was made with and without a delay line whose delay of $2.4\mu$seconds was a factor of 100 greater than the coherence time of the cavity. The improvement in SNR vs. enhanced Q is shown in Figure xx, for the delay line in and for no delay line. The improvement scales as expected for both cases.
+The procedure was followed for three time delays in the feedback loop.  
+The noise power and signal power are shown in Fig.~\ref{???}.
+The ratio of the two, SNR, is shown in Fig.~\ref{??}.
+As expected, both the signal and noise scale quadratically for the shortest delay, while the noise scales only linearly for the delay greater than $\frac{Q}{f}$.
+For the intermediate delay, the transition in noise scaling from linear to quadratic is seen in the region where $t_{\mathrm{delay}}\simeq\frac{Q}{f}$. 
+Thus the SNR is seen to increase linearly only for delays greater than $\frac{Q_{\mathrm{active}}}{f}$.
+In the longest delay, a Q enchancement of **** could be achieved, with a proportional gain in SNR.
 
 \begin{figure}[htbp]
 \includegraphics[width=.5\textwidth]{figs/measurement_6}
