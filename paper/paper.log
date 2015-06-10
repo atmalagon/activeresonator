@@ -1,13 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  12 MAY 2015 14:32
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.4.12)  10 JUN 2015 11:34
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/revtex/revtex4-1.cls
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
 Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
 ex4/ for documentation)
  Copyright (c) 2009 The American Physical Society.
@@ -67,7 +66,7 @@ Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
 \widetext@top=\box39
 \widetext@bot=\box40
 Class revtex4-1 Info: Selecting society aps on input line 7542.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/revtex/aps4-1.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
 File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
 mentation)
 Class revtex4-1 Info: RevTeX society APS selected on input line 31.
@@ -78,19 +77,19 @@ Class revtex4-1 Info: APS journal PRL selected on input line 7545.
 
 Class revtex4-1 Warning: No type size specified, using default 10.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
 File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
 Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/textcase/textcase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip44
 \bibsep=\skip45
@@ -99,36 +98,36 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
 Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
 or documentation)
 LaTeX Info: Redefining \REV@mathfrak on input line 119.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count95
@@ -136,26 +135,26 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen104
 )
 LaTeX Info: Redefining \text on input line 39.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen105
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count96
@@ -217,7 +216,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen113
@@ -230,15 +230,15 @@ LaTeX Font Info:    ... okay on input line 11.
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks23
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -247,22 +247,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -274,74 +274,144 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \openout3 = `paperNotes.bib'.
 
+
+
+Package natbib Warning: Citation `TODOCITEEQN' on page 1 undefined on input lin
+e 66.
+
+
+Package natbib Warning: Citation `TODOCITETHIS' on page 1 undefined on input li
+ne 85.
+
+Package epstopdf Info: Source file: <figs/basic_haloscope_schematic.eps>
+(epstopdf)                    date: 2015-06-10 09:48:38
+(epstopdf)                    size: 4403 bytes
+(epstopdf)             Output file: <figs/basic_haloscope_schematic-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-06-10 10:01:03
+(epstopdf)                    size: 5594 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/basic_haloscope_schem
+atic-eps-converted-to.pdf figs/basic_haloscope_schematic.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/basic_haloscope_schematic-eps-converted-to.pdf, id=1, 133.49875pt x 162.6
+075pt>
+File: figs/basic_haloscope_schematic-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use figs/basic_haloscope_schematic-eps-converted-to.pdf>
+Package pdftex.def Info: figs/basic_haloscope_schematic-eps-converted-to.pdf us
+ed on input line 96.
+(pdftex.def)             Requested size: 142.26378pt x 173.30101pt.
+Package epstopdf Info: Source file: <figs/basic_haloscope_microwave.eps>
+(epstopdf)                    date: 2015-06-10 11:16:06
+(epstopdf)                    size: 5684 bytes
+(epstopdf)             Output file: <figs/basic_haloscope_microwave-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2015-06-10 11:18:08
+(epstopdf)                    size: 5776 bytes
+(epstopdf)             Command: <repstopdf --outfile=figs/basic_haloscope_micro
+wave-eps-converted-to.pdf figs/basic_haloscope_microwave.eps>
+(epstopdf)             \includegraphics on input line 98.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs/basic_haloscope_microwave-eps-converted-to.pdf, id=2, 223.83624pt x 54.20
+25pt>
+File: figs/basic_haloscope_microwave-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use figs/basic_haloscope_microwave-eps-converted-to.pdf>
+Package pdftex.def Info: figs/basic_haloscope_microwave-eps-converted-to.pdf us
+ed on input line 98.
+(pdftex.def)             Requested size: 199.16928pt x 48.23013pt.
+
+
+Package natbib Warning: Citation `sikiviepaper' on page 1 undefined on input li
+ne 104.
+
+[1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 108.
+
+
+Package natbib Warning: Citation `sikiviepaper' on page 2 undefined on input li
+ne 122.
+
+
+Package natbib Warning: Citation `sikivie' on page 2 undefined on input line 14
+6.
+
 Package epstopdf Info: Source file: <figs/experiment_schematic.eps>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 7397 bytes
 (epstopdf)             Output file: <figs/experiment_schematic-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 7576 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/experiment_schematic-
 eps-converted-to.pdf figs/experiment_schematic.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 162.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/experiment_schematic-eps-converted-to.pdf, id=1, 234.8775pt x 202.7575pt>
+<figs/experiment_schematic-eps-converted-to.pdf, id=21, 234.8775pt x 202.7575pt
+>
 File: figs/experiment_schematic-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/experiment_schematic-eps-converted-to.pdf>
+ <use figs/experiment_schematic-eps-converted-to.pdf>
 Package pdftex.def Info: figs/experiment_schematic-eps-converted-to.pdf used on
- input line 94.
+ input line 162.
 (pdftex.def)             Requested size: 199.16928pt x 171.9332pt.
 Package epstopdf Info: Source file: <figs/equivalent_circuit.eps>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 9973 bytes
 (epstopdf)             Output file: <figs/equivalent_circuit-eps-converted-to.p
 df>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 9162 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/equivalent_circuit-ep
 s-converted-to.pdf figs/equivalent_circuit.eps>
-(epstopdf)             \includegraphics on input line 99.
+(epstopdf)             \includegraphics on input line 167.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/equivalent_circuit-eps-converted-to.pdf, id=2, 164.615pt x 172.645pt>
+<figs/equivalent_circuit-eps-converted-to.pdf, id=22, 164.615pt x 172.645pt>
 File: figs/equivalent_circuit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/equivalent_circuit-eps-converted-to.pdf>
 Package pdftex.def Info: figs/equivalent_circuit-eps-converted-to.pdf used on i
-nput line 99.
+nput line 167.
 (pdftex.def)             Requested size: 170.71652pt x 179.04865pt.
 Package epstopdf Info: Source file: <figs/amplitude_definitions.eps>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 10290 bytes
 (epstopdf)             Output file: <figs/amplitude_definitions-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2015-04-25 08:40:27
+(epstopdf)                    date: 2015-04-10 08:28:15
 (epstopdf)                    size: 7469 bytes
 (epstopdf)             Command: <repstopdf --outfile=figs/amplitude_definitions
 -eps-converted-to.pdf figs/amplitude_definitions.eps>
-(epstopdf)             \includegraphics on input line 104.
+(epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/amplitude_definitions-eps-converted-to.pdf, id=3, 184.69pt x 105.39375pt>
+<figs/amplitude_definitions-eps-converted-to.pdf, id=23, 184.69pt x 105.39375pt
+>
 File: figs/amplitude_definitions-eps-converted-to.pdf Graphic file (type pdf)
-<use figs/amplitude_definitions-eps-converted-to.pdf>
+ <use figs/amplitude_definitions-eps-converted-to.pdf>
 Package pdftex.def Info: figs/amplitude_definitions-eps-converted-to.pdf used o
-n input line 104.
+n input line 172.
 (pdftex.def)             Requested size: 170.71652pt x 97.42014pt.
- [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ [2 <./figs/basic_haloscope_schematic-eps-converted-to.pdf> <./figs/basic_halos
+cope_microwave-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 118.
+ on input line 181.
 
 
-Overfull \hbox (33.49716pt too wide) detected at line 127
+Overfull \hbox (33.49716pt too wide) detected at line 195
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 hj\OML/cmm/m/it/10 n\OT
 1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 n\OT1/cmr/
 m/n/10 (\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t[]\OT1/cmr/m/
@@ -352,102 +422,124 @@ t[]\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 n[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t
 L/cmm/m/it/10 G[]S[] \OT1/cmr/m/n/10 + [] \OMS/cmsy/m/n/10 j[]i
  []
 
-[2 <./figs/experiment_schematic-eps-converted-to.pdf> <./figs/equivalent_circui
+[3 <./figs/experiment_schematic-eps-converted-to.pdf> <./figs/equivalent_circui
 t-eps-converted-to.pdf> <./figs/amplitude_definitions-eps-converted-to.pdf>]
-<figs/looking_at_coth.pdf, id=45, 276.88184pt x 181.23067pt>
+<figs/looking_at_coth.pdf, id=64, 276.88184pt x 181.23067pt>
 File: figs/looking_at_coth.pdf Graphic file (type pdf)
 
 <use figs/looking_at_coth.pdf>
-Package pdftex.def Info: figs/looking_at_coth.pdf used on input line 291.
+Package pdftex.def Info: figs/looking_at_coth.pdf used on input line 359.
 (pdftex.def)             Requested size: 255.0pt x 166.9112pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.0pt too wide) in paragraph at lines 359--360
  [][] 
  []
 
-<figs/no_isolator.png, id=46, 719.68875pt x 461.725pt>
+<figs/no_isolator.png, id=65, 719.68875pt x 461.725pt>
 File: figs/no_isolator.png Graphic file (type png)
 
 <use figs/no_isolator.png>
-Package pdftex.def Info: figs/no_isolator.png used on input line 298.
+Package pdftex.def Info: figs/no_isolator.png used on input line 366.
 (pdftex.def)             Requested size: 255.0pt x 163.6pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 298--299
+Overfull \hbox (9.0pt too wide) in paragraph at lines 366--367
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+LaTeX Warning: Reference `FIG:??' on page 4 undefined on input line 372.
+
+[4 <./figs/looking_at_coth.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 378.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--406
 
  []
 
-[3 <./figs/looking_at_coth.pdf> <./figs/no_isolator.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 304--320
 
- []
+LaTeX Warning: Reference `???' on page 5 undefined on input line 408.
 
-<figs/measurement_6.pdf, id=76, 290.69543pt x 190.14175pt>
+
+LaTeX Warning: Reference `??' on page 5 undefined on input line 409.
+
+<figs/measurement_6.pdf, id=94, 290.69543pt x 190.14175pt>
 File: figs/measurement_6.pdf Graphic file (type pdf)
 
 <use figs/measurement_6.pdf>
-Package pdftex.def Info: figs/measurement_6.pdf used on input line 325.
+Package pdftex.def Info: figs/measurement_6.pdf used on input line 416.
 (pdftex.def)             Requested size: 255.0pt x 166.79721pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 325--326
+Overfull \hbox (9.0pt too wide) in paragraph at lines 416--417
  [][] 
  []
 
-<figs/measurement_7.pdf, id=77, 282.34132pt x 187.94617pt>
+<figs/measurement_7.pdf, id=95, 282.34132pt x 187.94617pt>
 File: figs/measurement_7.pdf Graphic file (type pdf)
 
 <use figs/measurement_7.pdf>
-Package pdftex.def Info: figs/measurement_7.pdf used on input line 331.
+Package pdftex.def Info: figs/measurement_7.pdf used on input line 422.
 (pdftex.def)             Requested size: 255.0pt x 169.75221pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 331--332
+Overfull \hbox (9.0pt too wide) in paragraph at lines 422--423
  [][] 
  []
 
-<figs/experiment.pdf, id=78, 284.77763pt x 181.11954pt>
+<figs/experiment.pdf, id=96, 284.77763pt x 181.11954pt>
 File: figs/experiment.pdf Graphic file (type pdf)
 
 <use figs/experiment.pdf>
-Package pdftex.def Info: figs/experiment.pdf used on input line 337.
+Package pdftex.def Info: figs/experiment.pdf used on input line 428.
 (pdftex.def)             Requested size: 255.0pt x 162.18526pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 337--338
+Overfull \hbox (9.0pt too wide) in paragraph at lines 428--429
  [][] 
  []
 
-[4 <./figs/measurement_6.pdf> <./figs/measurement_7.pdf> <./figs/experiment.pdf
->] (./paper.bbl) [5] (./paper.aux) ) 
+[5 <./figs/no_isolator.png> <./figs/measurement_6.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 436.
+
+(./paper.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[6 <./figs/measurement_7.pdf> <./figs/experiment.pdf>] (./paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4209 strings out of 493117
- 57363 string characters out of 6135433
- 142908 words of memory out of 5000000
- 7629 multiletter control sequences out of 15000+600000
- 7627 words of font info for 28 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 4232 strings out of 495034
+ 57671 string characters out of 6181677
+ 143166 words of memory out of 5000000
+ 7396 multiletter control sequences out of 15000+600000
+ 7935 words of font info for 29 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
  38i,12n,28p,1147b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti9.pfb>
-Output written on paper.pdf (5 pages, 345913 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on paper.pdf (6 pages, 385110 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
