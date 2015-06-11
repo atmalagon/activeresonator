@@ -68,7 +68,7 @@ quality factor $Q$ of the resonance being used \cite{TODOCITEEQN}:
 \begin{align}
 P_{sig} = \eta g_{a\gamma\gamma}^2B_{ext}^2VC\frac{\rho_a}{m_a}\text{min}(Q_{loaded},Q_a)
 \end{align}
-where $\eta$ is the coupling between the cavity and output, $g_{a\gamma\gamma}$ is the axion-photon coupling, $B$ is the applied magnetic field, $V$ is the colume of the cavity, $C$ is the "form factor", or overlap between the cavity resonant mode and the axion field, $\rho_a$ is the local density of dark matter axions, $m_a$ is the axion mass, $Q_{loaded}$ is the loaded Q of the cavity resonant mode, $Q_a$ is the thermal width of the axion signal, taken to be $10^6$ or higher.
+where $\eta$ is the coupling between the cavity and output, $g_{a\gamma\gamma}$ is the axion-photon coupling, $B$ is the applied magnetic field, $V$ is the volume of the cavity, $C$ is the "form factor", or overlap between the cavity resonant mode and the axion field, $\rho_a$ is the local density of dark matter axions, $m_a$ is the axion mass, $Q_{loaded}$ is the loaded Q of the cavity resonant mode, $Q_a$ is the thermal width of the axion signal, taken to be $10^6$ or higher.
 The primary background is the thermal noise from the physical temperature of the cavity and the electronic noise from the first stage amplifier.  
 The figure of merit for a microwave cavity experiment is the instantaneous axion signal to noise ratio (SNR).
 %why emphasize instanteneous?
@@ -87,7 +87,74 @@ Loaded $Q$s of $10^5$ at 1 GHz have been achieved with copper cavities in axion 
 %The quality factor for a passive resonator depends solely on the frequency, geometry, and material of the resonator.
 %For a cylindrical copper cavity the Q scales as $Q \propto f^{-2/3}$....skin depth.
 
-We present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.
+We present here a means of artificially increasing the $Q$ of the cavity resonance using active feedback in order to improve sensitivity to dark matter axions and increase the speed at which different axion masses can be tested.  In order to derive the effect of active feedback, we first study the classic axion haloscope in terms of the microwave S parameter formalism.
+
+\section{Axion Haloscope as a Microwave Device}
+
+
+\begin{figure}
+\includegraphics[width=5cm]{figs/basic_haloscope_schematic.eps}
+\caption{\label{fig:haloscope_schematic} Schematic of the classic axion haloscope experiment.}
+\includegraphics[width=7cm]{figs/basic_haloscope_microwave.eps}
+\caption{\label{fig:haloscope_equiv} Microwave diagram of the classic axion haloscope experiment as a two port device.  Signals incoming to the cavity are denoted $a_n$, where $n$ is the port number, and outgoing signals are denoted with $b_n$.}
+\end{figure}
+
+Assume $\omega_a\simeq m_a$.
+
+Consider the axion haloscope described in \cite{sikiviepaper}, and shown in Fig.~\ref{fig:haloscope_schematic}.
+A microwave cavity is placed in a strong magnetic field.  The unloaded Q of the resonance will be denoted $Q_0$ and the loaded Q will be denoted as $Q_L$.  Axion dark matter passing through the field and cavity will excite the electromagnetic resonance as some axions are converted into photons.  
+A critically coupled antenna extracts some of this power from the cavity and carries it to a detector.
+Inside the cavity, the presence of the axion field can be treated as a modification to Maxwell's equations, the relevant modification being: **Ana check this is right**
+\begin{equation}
+\nabla \times B - \frac{\partial E}{\partial t} = J + g_{a\gamma\gamma}B_0m_a a,
+\end{equation}
+where $E$ and $B$ are the electric and magnetic fields of the excitation, $g_{a\gamma\gamma}$ is the axion-photon coupling, $B_0$ is the applied magnetic field (assumed to be much larger than the excitation field), $m_a$ is the axion mass, and $a$ is the axion field.  The energy flux of axion dark matter through the cavity is:
+\begin{equation}
+P_{a}=m_a^2a^2V\omega_a=\rho_{dm}V\omega_a,
+\end{equation}
+where $V$ is the volume of the cavity, $\rho_{dm}$ is the density of dark matter axions, $\omega_a$ is the frequency of oscillation of the axion field.  For cold dark matter, one can approximate $\hbar \omega_a \simeq m_a c^2$ and therefore $m_a$ and $\omega_a$ can be used interchangeably.
+
+From this it can be seen that the effect of an axion field in a strong magnetic field is equivalent to the effect of a current density.  
+Therefore, all intuitions from antenna-resonator coupling are also relevant for axions, and the system can be treated as a cavity filter between the axion field and the output antenna, as shown in Fig.~\ref{fig:haloscope_equiv}.  Here the coupling between the output antenna and the cavity is $Q_2 = 2 Q_L$ because of the assumption of critical coupling, and the coupling between the axion field and the cavity will be labeled $Q_1$.  The value of $Q_1$ can be derived from the modified Maxwell's equation to be 
+\begin{equation}
+\frac{1}{Q_1}=\frac{g^2_{a\gamma\gamma}B_0^2 C^2}{m_a^2},
+\end{equation}
+where $C$ is the 'form factor', or integral of $E\cdot B$ over the cavity volume as described in Ref.~\cite{sikiviepaper}.  The loaded Q of the system is
+\begin{equation}
+\frac{1}{Q_L}=\frac{1}{Q_0}+\frac{1}{Q_1}+\frac{1}{Q_2},
+\end{equation}
+but $Q_1$ can be safely assumed to be so small as to not contribute to $Q_L$.
+
+The S matrix for the cavity can be written:
+\begin{equation}
+S_{\mathrm{haloscope}}=
+\left( \begin{array}{cc}
+        1-\frac{2Q_L}{Q_1} & \frac{2Q_L}{\sqrt{Q_1Q_2}}\\
+        \frac{2Q_L}{\sqrt{Q_1Q_2}} & 1-\frac{2Q_L}{Q_1} \\
+		\end{array}\right).
+\end{equation}
+
+The signal towards the detector is therefore
+\begin{equation}
+b_2=S_{21}a_1+S_{11}b_2
+\end{equation}
+
+For a critically coupled antenna, $S_{11}=0$, so the power at the detector:
+\begin{equation}
+P_{det}=|b_2^2|=S_{21}^2 P_a =\frac{1}{2} g^2_{a\gamma\gamma}B_0^2C^2 \frac{\rho_{dm}}{m_a}.
+\end{equation}
+This number is a factor of 2 smaller than described in Ref.~\cite{sikivie}, because half of the axion power is dissipated by cavity losses due to critical coupling of the output antenna.
+
+Thermal noise at the detector includes thermal noise from the cavity (we will use the term $a_0$ to represent this), as well as noise coupled in from the ports:
+\begin{equation}
+b_{2,noise}=S_{21} a_{1,noise}+S_{22} a_{2,noise} + \frac{Q_L}{\sqrt{Q_0Q_2}} a_{0,noise}
+\end{equation}
+
+In the simple haloscope case, only the cavity thermal noise is relevant, giving
+\begin{equation}
+P_{noise}=<b_{2,noise}^2>=<a_{0,noise}>^2=kTb,
+\end{equation}
+where $k$ is Boltzmann constant, $T$ is the physical temperature of the cavity, and $b$ is the bandwidth over which the noise is measured.
 
 \section{Theory of Method}
 
