@@ -3,3 +3,5 @@
 .Spotlight-V100
 .Trashes
 ipython_notebooks/.ipynb_checkpoints/*
+*.log
+*.aux
